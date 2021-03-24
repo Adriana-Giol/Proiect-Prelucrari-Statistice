@@ -1,1 +1,1 @@
-# Proiect-Programare-Aplicatii-Windows
+# Proiect - Programare Aplicatii Windows
