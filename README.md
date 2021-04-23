@@ -1,5 +1,5 @@
 # Proiect - Programare Aplicatii Windows
-# Resurse:
+# I. Resurse:
 ## 🎯1.Proiecte de referinta:
 🎯[**POS with Inventory System C# - Part 1 - GUI, Login Form & POS tab (Tagalog)**](https://www.youtube.com/watch?v=JeIAZuooiJw&ab_channel=BrianBinag)</br>
 🎯[**eShop UI design concept with Bunifu - C# WinForms**](https://www.youtube.com/watch?v=3VEKOfyTxNk&ab_channel=KimTooFlex)</br>
@@ -21,5 +21,5 @@
 🟣#352751
 🟣#8b63cc
 
-# Descrierea proiectului:
-# Functionalitatile proiectului:
+# II. Descrierea proiectului:
+# III. Functionalitatile proiectului:
