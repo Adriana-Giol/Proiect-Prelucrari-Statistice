@@ -8,6 +8,7 @@
 🎯[**C# Full Project Tutorial(Supermarket Management System)With source co**](https://www.youtube.com/watch?v=i4YHCa92BdM&ab_channel=MyCodeSpace)</br>
 🎯[**Proiect C# si SQL SERVER Sistem Scolar de Inregistrare**](https://www.youtube.com/watch?v=NolEHLia_KM&list=PL6XxVO5VsLuYw0KLT19Bnzf8TzTmmtcQ-&ab_channel=lectiideinformatica)</br>
 🎯[**Proiect Calculator Salarii C# si SQL SERVER | Creare Baza de date, Tabele si Relatiile dintre ele**](https://www.youtube.com/watch?v=ifUj0Y_Za7c&list=PL6XxVO5VsLuYj0F98omiMV-kAlnDXnWG8&ab_channel=lectiideinformatica)</br>
+[**C# - Outlook Mailbox Concept [Guna Ui Framework Demo]**](https://www.youtube.com/watch?v=aQWCnHKyjGY&ab_channel=C%23UiAcademy)</br>
 
 ## 💻2. Tutoriale:
 💻[**Creating an Ellipse Tool in WinForm App (C#)**](https://www.youtube.com/watch?v=uJtNyuO8l5o&ab_channel=C%23UiAcademy)</br>
