@@ -1,4 +1,5 @@
 # Proiect - Programare Aplicatii Windows
+### ~ Tema: Prelucrari Statistice ~
 # I. Resurse:
 ## 🎯1.Proiecte de referinta:
 🎯[**POS with Inventory System C# - Part 1 - GUI, Login Form & POS tab (Tagalog)**](https://www.youtube.com/watch?v=JeIAZuooiJw&ab_channel=BrianBinag)</br>
@@ -42,14 +43,15 @@ Elemente ce trebuie incluse in proiect in functie de cerinte:
 6. Dezvoltarea unei interfete cu meniuri principale si contextuale specifice domeniului
 7. Macheta pentru completarea unui formular tipizat (sau proiectat adhoc, daca nu exista tipizat) - de preferat in Crystal Reports
 
-## Partea II
+## Partea a II-a
 8. Prezentarea grafica a unor date de baza sau calculate
 9. Imprimarea unui document
 10. Implementarea unor functii prin drag & drop + clipboard
 
-## Partea III
+## Partea a III-a
 11. Stocarea si regasirea datelor într-o baza de date
 12. Realizarea unui control de utilizator folosit in mai multe aplicatii ale proiectului
 13. Utilizarea unui fisier de tip XML
 14. Binding intre date si controale
+
 # III. Functionalitatile proiectului:
