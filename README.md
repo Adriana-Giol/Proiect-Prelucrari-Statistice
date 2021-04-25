@@ -39,10 +39,6 @@ Elemente ce trebuie incluse in proiect in functie de cerinte:
 ![**Dashboard**](https://user-images.githubusercontent.com/60271540/116011437-ba0bb280-a62d-11eb-9ee0-041d12e3f3d9.png)
 ![**Formular Persoane**](https://user-images.githubusercontent.com/60271540/116011399-7ca72500-a62d-11eb-9d8c-448d444616e1.png)
 
-
-
-
-
 # III. Resurse:
 ## 🎯1.Proiecte de referinta:
 🎯[**POS with Inventory System C# - Part 1 - GUI, Login Form & POS tab (Tagalog)**](https://www.youtube.com/watch?v=JeIAZuooiJw&ab_channel=BrianBinag)</br>
