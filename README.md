@@ -36,7 +36,7 @@ Elemente ce trebuie incluse in proiect in functie de cerinte:
 ![**Splash Screen**](https://user-images.githubusercontent.com/60271540/116011320-0c000880-a62d-11eb-8f7c-1345f2d5b062.png)
 ![**LogIn**](https://user-images.githubusercontent.com/60271540/116011341-2934d700-a62d-11eb-9477-341c99d85609.png)
 ![**SignIn**](https://user-images.githubusercontent.com/60271540/116011353-39e54d00-a62d-11eb-8cd2-749dc118fd92.png)
-![**DashBoard**](https://user-images.githubusercontent.com/60271540/116011370-55505800-a62d-11eb-87b2-1d64d9703e1a.png)
+![**Dashboard**](https://user-images.githubusercontent.com/60271540/116011437-ba0bb280-a62d-11eb-9ee0-041d12e3f3d9.png)
 ![**Formular Persoane**](https://user-images.githubusercontent.com/60271540/116011399-7ca72500-a62d-11eb-9d8c-448d444616e1.png)
 
 
