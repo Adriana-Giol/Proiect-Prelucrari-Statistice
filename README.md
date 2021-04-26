@@ -1,4 +1,4 @@
-# Proiect - Programare Aplicatii Windows
+# Proiect - Programare Aplicatii Windows - Prelucrari Statistice
 ### ~ Tema: Prelucrari Statistice ~
 
 # II. Descrierea proiectului:
