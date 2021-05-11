@@ -14,6 +14,9 @@
     <img src = "Logo/sap.png" alt="SAP Crystal Reposts" width = "auto" height="40px" align="center" title="SAP Crystal Reports" />
 </a>
 
+## Prezentarea aplicatiei
+ Aplicatia se adreseaza angajatilor INSSE care se ocupa cu organizarea si prelucrarea datelor colectate in cadrul Recensamantului Populatiei Romanaiei din anul 2022. In cadrul aplicatiei angajatii pot introduce datele colectate la nivel fizic despre persoanele recenzate. De asemenea aplicatia permite si adaugarea Recenzorilor care se ocupa de acest recensamant.
+ 
 ## [I.Descrierea cerintelor proiectului](https://github.com/Adriana-Giol/Proiect-Prelucrari-Statistice/blob/main/4.%20README/1.%20Descrierea%20Proiectului.md)
 ## [II.Prezentare vizuala proiect](https://github.com/Adriana-Giol/Proiect-Prelucrari-Statistice/blob/main/4.%20README/2.%20Prezentare%20Vizuala%20Proiect.md)
 ## [III.Resurse](https://github.com/Adriana-Giol/Proiect-Prelucrari-Statistice/blob/main/4.%20README/3.%20Resurse.md)
