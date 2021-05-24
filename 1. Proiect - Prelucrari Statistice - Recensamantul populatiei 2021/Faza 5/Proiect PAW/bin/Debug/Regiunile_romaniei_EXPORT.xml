@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Regiunile Romaniei>
+  <Dobrogea>
+    <Popescu Ion />
+  </Dobrogea>
+  <Muntenia>
+    <Dobrescu Marin />
+  </Muntenia>
+  <Bucovina>
+    <Ioana Maria />
+  </Bucovina>
+  <Moldova>
+    <Ionescu Radu />
+  </Moldova>
+  <Transilvania>
+    <Brasov />
+    <Covasna />
+    <Harghita />
+    <Mures />
+    <Sibiu />
+    <Alba />
+    <Deva />
+    <Cluj />
+    <Bistrita-Nasaud />
+    <Salaj />
+  </Transilvania>
+  <Maramures>
+    <Maramures />
+    <Satu-Mare />
+  </Maramures>
+  <Crisana>
+    <Bihor />
+    <Arad />
+  </Crisana>
+  <Banat>
+    <Timis />
+    <Caras-Severin />
+  </Banat>
+  <Oltenia>
+    <Mehedinti />
+    <Dolj />
+    <Gorj />
+    <Valcea />
+  </Oltenia>
+</Regiunile Romaniei>
