@@ -59,16 +59,15 @@
             this.labelAni = new System.Windows.Forms.Label();
             this.labelDataNasterii = new System.Windows.Forms.Label();
             this.gunaTbNume = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gunaTbCNP = new Guna.UI2.WinForms.Guna2TextBox();
-            this.labelCNP = new System.Windows.Forms.Label();
+            this.gunaTbCodRecenzor = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelCodRecenzor = new System.Windows.Forms.Label();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.labelNume = new System.Windows.Forms.Label();
             this.gunaGbSex = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.gunaImgCkFem = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.guna2ImageRadioButtonMasculin = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.guna2ImageRadioButtonFeminin = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.labelMasculin = new System.Windows.Forms.Label();
             this.labelFeminin = new System.Windows.Forms.Label();
-            this.gunaImgCkMasc = new Guna.UI2.WinForms.Guna2ImageCheckBox();
-            this.guna2ImageCheckBox8 = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.gunaaBtnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.gunaBtnSalvare = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -396,8 +395,8 @@
             this.gunaGbDatePersonale.Controls.Add(this.labelAni);
             this.gunaGbDatePersonale.Controls.Add(this.labelDataNasterii);
             this.gunaGbDatePersonale.Controls.Add(this.gunaTbNume);
-            this.gunaGbDatePersonale.Controls.Add(this.gunaTbCNP);
-            this.gunaGbDatePersonale.Controls.Add(this.labelCNP);
+            this.gunaGbDatePersonale.Controls.Add(this.gunaTbCodRecenzor);
+            this.gunaGbDatePersonale.Controls.Add(this.labelCodRecenzor);
             this.gunaGbDatePersonale.Controls.Add(this.guna2DateTimePicker1);
             this.gunaGbDatePersonale.Controls.Add(this.labelNume);
             this.gunaGbDatePersonale.Controls.Add(this.gunaGbSex);
@@ -521,47 +520,47 @@
             this.gunaTbNume.TextChanged += new System.EventHandler(this.gunaTbNume_TextChanged);
             this.gunaTbNume.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTbNume_KeyPress);
             // 
-            // gunaTbCNP
+            // gunaTbCodRecenzor
             // 
-            this.gunaTbCNP.Animated = true;
-            this.gunaTbCNP.AutoRoundedCorners = true;
-            this.gunaTbCNP.BorderColor = System.Drawing.Color.Blue;
-            this.gunaTbCNP.BorderRadius = 19;
-            this.gunaTbCNP.BorderThickness = 2;
-            this.gunaTbCNP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTbCNP.DefaultText = "";
-            this.gunaTbCNP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gunaTbCNP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gunaTbCNP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaTbCNP.DisabledState.Parent = this.gunaTbCNP;
-            this.gunaTbCNP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaTbCNP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaTbCNP.FocusedState.Parent = this.gunaTbCNP;
-            this.gunaTbCNP.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.gunaTbCNP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaTbCNP.HoverState.Parent = this.gunaTbCNP;
-            this.gunaTbCNP.Location = new System.Drawing.Point(28, 161);
-            this.gunaTbCNP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaTbCNP.Name = "gunaTbCNP";
-            this.gunaTbCNP.PasswordChar = '\0';
-            this.gunaTbCNP.PlaceholderText = "CNP";
-            this.gunaTbCNP.SelectedText = "";
-            this.gunaTbCNP.ShadowDecoration.Parent = this.gunaTbCNP;
-            this.gunaTbCNP.Size = new System.Drawing.Size(250, 40);
-            this.gunaTbCNP.TabIndex = 8;
-            this.gunaTbCNP.TextChanged += new System.EventHandler(this.gunaTbCNP_TextChanged);
-            this.gunaTbCNP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTbCNP_KeyPress);
+            this.gunaTbCodRecenzor.Animated = true;
+            this.gunaTbCodRecenzor.AutoRoundedCorners = true;
+            this.gunaTbCodRecenzor.BorderColor = System.Drawing.Color.Blue;
+            this.gunaTbCodRecenzor.BorderRadius = 19;
+            this.gunaTbCodRecenzor.BorderThickness = 2;
+            this.gunaTbCodRecenzor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTbCodRecenzor.DefaultText = "";
+            this.gunaTbCodRecenzor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gunaTbCodRecenzor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gunaTbCodRecenzor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaTbCodRecenzor.DisabledState.Parent = this.gunaTbCodRecenzor;
+            this.gunaTbCodRecenzor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaTbCodRecenzor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTbCodRecenzor.FocusedState.Parent = this.gunaTbCodRecenzor;
+            this.gunaTbCodRecenzor.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.gunaTbCodRecenzor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTbCodRecenzor.HoverState.Parent = this.gunaTbCodRecenzor;
+            this.gunaTbCodRecenzor.Location = new System.Drawing.Point(28, 161);
+            this.gunaTbCodRecenzor.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.gunaTbCodRecenzor.Name = "gunaTbCodRecenzor";
+            this.gunaTbCodRecenzor.PasswordChar = '\0';
+            this.gunaTbCodRecenzor.PlaceholderText = "Cod Recenzor";
+            this.gunaTbCodRecenzor.SelectedText = "";
+            this.gunaTbCodRecenzor.ShadowDecoration.Parent = this.gunaTbCodRecenzor;
+            this.gunaTbCodRecenzor.Size = new System.Drawing.Size(250, 40);
+            this.gunaTbCodRecenzor.TabIndex = 8;
+            this.gunaTbCodRecenzor.TextChanged += new System.EventHandler(this.gunaTbCodRecenzor_TextChanged);
+            this.gunaTbCodRecenzor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTbCodRecenzor_KeyPress);
             // 
-            // labelCNP
+            // labelCodRecenzor
             // 
-            this.labelCNP.AutoSize = true;
-            this.labelCNP.BackColor = System.Drawing.Color.Transparent;
-            this.labelCNP.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCNP.Location = new System.Drawing.Point(24, 140);
-            this.labelCNP.Name = "labelCNP";
-            this.labelCNP.Size = new System.Drawing.Size(206, 38);
-            this.labelCNP.TabIndex = 17;
-            this.labelCNP.Text = "2. Cod Numeric Personal (CNP)\r\n\r\n";
+            this.labelCodRecenzor.AutoSize = true;
+            this.labelCodRecenzor.BackColor = System.Drawing.Color.Transparent;
+            this.labelCodRecenzor.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCodRecenzor.Location = new System.Drawing.Point(24, 140);
+            this.labelCodRecenzor.Name = "labelCodRecenzor";
+            this.labelCodRecenzor.Size = new System.Drawing.Size(111, 19);
+            this.labelCodRecenzor.TabIndex = 17;
+            this.labelCodRecenzor.Text = "2. Cod Recenzor";
             // 
             // guna2DateTimePicker1
             // 
@@ -606,11 +605,10 @@
             this.gunaGbSex.BorderRadius = 58;
             this.gunaGbSex.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.gunaGbSex.BorderThickness = 2;
-            this.gunaGbSex.Controls.Add(this.gunaImgCkFem);
+            this.gunaGbSex.Controls.Add(this.guna2ImageRadioButtonMasculin);
+            this.gunaGbSex.Controls.Add(this.guna2ImageRadioButtonFeminin);
             this.gunaGbSex.Controls.Add(this.labelMasculin);
             this.gunaGbSex.Controls.Add(this.labelFeminin);
-            this.gunaGbSex.Controls.Add(this.gunaImgCkMasc);
-            this.gunaGbSex.Controls.Add(this.guna2ImageCheckBox8);
             this.gunaGbSex.CustomBorderColor = System.Drawing.Color.SkyBlue;
             this.gunaGbSex.CustomBorderThickness = new System.Windows.Forms.Padding(0);
             this.gunaGbSex.FillColor = System.Drawing.Color.SkyBlue;
@@ -624,22 +622,37 @@
             this.gunaGbSex.Text = "Sex";
             this.gunaGbSex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gunaImgCkFem
+            // guna2ImageRadioButtonMasculin
             // 
-            this.gunaImgCkFem.BackColor = System.Drawing.Color.Transparent;
-            this.gunaImgCkFem.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
-            this.gunaImgCkFem.CheckedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaImgCkFem.CheckedState.Parent = this.gunaImgCkFem;
-            this.gunaImgCkFem.HoverState.Parent = this.gunaImgCkFem;
-            this.gunaImgCkFem.Image = global::Proiect_PAW.Properties.Resources.woman;
-            this.gunaImgCkFem.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaImgCkFem.IndicateFocus = false;
-            this.gunaImgCkFem.Location = new System.Drawing.Point(15, 40);
-            this.gunaImgCkFem.Name = "gunaImgCkFem";
-            this.gunaImgCkFem.PressedState.Parent = this.gunaImgCkFem;
-            this.gunaImgCkFem.Size = new System.Drawing.Size(44, 47);
-            this.gunaImgCkFem.TabIndex = 12;
-            this.gunaImgCkFem.UseTransparentBackground = true;
+            this.guna2ImageRadioButtonMasculin.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
+            this.guna2ImageRadioButtonMasculin.CheckedState.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageRadioButtonMasculin.CheckedState.Parent = this.guna2ImageRadioButtonMasculin;
+            this.guna2ImageRadioButtonMasculin.HoverState.Parent = this.guna2ImageRadioButtonMasculin;
+            this.guna2ImageRadioButtonMasculin.Image = global::Proiect_PAW.Properties.Resources.man;
+            this.guna2ImageRadioButtonMasculin.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageRadioButtonMasculin.IndicateFocus = false;
+            this.guna2ImageRadioButtonMasculin.Location = new System.Drawing.Point(126, 40);
+            this.guna2ImageRadioButtonMasculin.Name = "guna2ImageRadioButtonMasculin";
+            this.guna2ImageRadioButtonMasculin.PressedState.Parent = this.guna2ImageRadioButtonMasculin;
+            this.guna2ImageRadioButtonMasculin.Size = new System.Drawing.Size(60, 43);
+            this.guna2ImageRadioButtonMasculin.TabIndex = 37;
+            this.guna2ImageRadioButtonMasculin.UseTransparentBackground = true;
+            // 
+            // guna2ImageRadioButtonFeminin
+            // 
+            this.guna2ImageRadioButtonFeminin.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
+            this.guna2ImageRadioButtonFeminin.CheckedState.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageRadioButtonFeminin.CheckedState.Parent = this.guna2ImageRadioButtonFeminin;
+            this.guna2ImageRadioButtonFeminin.HoverState.Parent = this.guna2ImageRadioButtonFeminin;
+            this.guna2ImageRadioButtonFeminin.Image = global::Proiect_PAW.Properties.Resources.woman;
+            this.guna2ImageRadioButtonFeminin.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageRadioButtonFeminin.IndicateFocus = false;
+            this.guna2ImageRadioButtonFeminin.Location = new System.Drawing.Point(3, 40);
+            this.guna2ImageRadioButtonFeminin.Name = "guna2ImageRadioButtonFeminin";
+            this.guna2ImageRadioButtonFeminin.PressedState.Parent = this.guna2ImageRadioButtonFeminin;
+            this.guna2ImageRadioButtonFeminin.Size = new System.Drawing.Size(59, 43);
+            this.guna2ImageRadioButtonFeminin.TabIndex = 36;
+            this.guna2ImageRadioButtonFeminin.UseTransparentBackground = true;
             // 
             // labelMasculin
             // 
@@ -660,36 +673,6 @@
             this.labelFeminin.Size = new System.Drawing.Size(59, 19);
             this.labelFeminin.TabIndex = 14;
             this.labelFeminin.Text = "Feminin";
-            // 
-            // gunaImgCkMasc
-            // 
-            this.gunaImgCkMasc.BackColor = System.Drawing.Color.Transparent;
-            this.gunaImgCkMasc.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
-            this.gunaImgCkMasc.CheckedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaImgCkMasc.CheckedState.Parent = this.gunaImgCkMasc;
-            this.gunaImgCkMasc.HoverState.Parent = this.gunaImgCkMasc;
-            this.gunaImgCkMasc.Image = global::Proiect_PAW.Properties.Resources.man;
-            this.gunaImgCkMasc.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaImgCkMasc.IndicateFocus = false;
-            this.gunaImgCkMasc.Location = new System.Drawing.Point(130, 40);
-            this.gunaImgCkMasc.Name = "gunaImgCkMasc";
-            this.gunaImgCkMasc.PressedState.Parent = this.gunaImgCkMasc;
-            this.gunaImgCkMasc.Size = new System.Drawing.Size(56, 47);
-            this.gunaImgCkMasc.TabIndex = 13;
-            this.gunaImgCkMasc.UseTransparentBackground = true;
-            // 
-            // guna2ImageCheckBox8
-            // 
-            this.guna2ImageCheckBox8.CheckedState.Image = global::Proiect_PAW.Properties.Resources.cancel;
-            this.guna2ImageCheckBox8.CheckedState.Parent = this.guna2ImageCheckBox8;
-            this.guna2ImageCheckBox8.HoverState.Parent = this.guna2ImageCheckBox8;
-            this.guna2ImageCheckBox8.Image = global::Proiect_PAW.Properties.Resources.Picture2;
-            this.guna2ImageCheckBox8.IndicateFocus = false;
-            this.guna2ImageCheckBox8.Location = new System.Drawing.Point(121, 83);
-            this.guna2ImageCheckBox8.Name = "guna2ImageCheckBox8";
-            this.guna2ImageCheckBox8.PressedState.Parent = this.guna2ImageCheckBox8;
-            this.guna2ImageCheckBox8.Size = new System.Drawing.Size(44, 47);
-            this.guna2ImageCheckBox8.TabIndex = 35;
             // 
             // gunaaBtnCancel
             // 
@@ -743,7 +726,6 @@
             this.gunaBtnSalvare.TabIndex = 5;
             this.gunaBtnSalvare.Text = "Salvare";
             this.gunaBtnSalvare.UseTransparentBackground = true;
-        //   this.gunaBtnSalvare.Click += new System.EventHandler(this.gunaBtnSalvare_Click);
             // 
             // guna2Elipse1
             // 
@@ -848,15 +830,13 @@
         private System.Windows.Forms.Label labelAni;
         private System.Windows.Forms.Label labelDataNasterii;
         private Guna.UI2.WinForms.Guna2TextBox gunaTbNume;
-        private Guna.UI2.WinForms.Guna2TextBox gunaTbCNP;
-        private System.Windows.Forms.Label labelCNP;
+        private Guna.UI2.WinForms.Guna2TextBox gunaTbCodRecenzor;
+        private System.Windows.Forms.Label labelCodRecenzor;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private System.Windows.Forms.Label labelNume;
         private Guna.UI2.WinForms.Guna2GroupBox gunaGbSex;
-        private Guna.UI2.WinForms.Guna2ImageCheckBox gunaImgCkFem;
         private System.Windows.Forms.Label labelMasculin;
         private System.Windows.Forms.Label labelFeminin;
-        private Guna.UI2.WinForms.Guna2ImageCheckBox gunaImgCkMasc;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
         private System.Windows.Forms.Label labelRegiune;
         private Guna.UI2.WinForms.Guna2TextBox gunaTbLocalitate;
@@ -869,7 +849,6 @@
         private Guna.UI2.WinForms.Guna2ImageCheckBox gunaImgCkCNP;
         private Guna.UI2.WinForms.Guna2ImageCheckBox gunaImgCkNume;
         private Guna.UI2.WinForms.Guna2ComboBox gunaCbJudet;
-        private Guna.UI2.WinForms.Guna2ImageCheckBox guna2ImageCheckBox8;
         private Guna.UI2.WinForms.Guna2ImageCheckBox gunaCkImgRegiune;
         private Guna.UI2.WinForms.Guna2ImageCheckBox gunaImgCkSex;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -883,5 +862,7 @@
         private System.Windows.Forms.ToolStripMenuItem fisierTextToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem fisierXMLToolStripMenuItem1;
         private Guna.UI2.WinForms.Guna2ComboBox gunaCbRegiune;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButtonMasculin;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButtonFeminin;
     }
 }

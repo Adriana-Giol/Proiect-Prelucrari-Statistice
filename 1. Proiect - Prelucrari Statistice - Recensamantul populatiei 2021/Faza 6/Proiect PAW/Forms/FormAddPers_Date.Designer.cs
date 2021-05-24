@@ -62,8 +62,6 @@
             this.gunaGbMediu = new Guna.UI2.WinForms.Guna2GroupBox();
             this.labelUrban = new System.Windows.Forms.Label();
             this.labelRural = new System.Windows.Forms.Label();
-            this.guna2ImageCheckBox1 = new Guna.UI2.WinForms.Guna2ImageCheckBox();
-            this.guna2ImageCheckBox2 = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.gunaGbDatePersonale = new Guna.UI2.WinForms.Guna2GroupBox();
             this.labelAni = new System.Windows.Forms.Label();
             this.gunaCBStareCivila = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -77,10 +75,8 @@
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.labelNume = new System.Windows.Forms.Label();
             this.gunaGbSex = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.gunaCkFemeie = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.labelMasculin = new System.Windows.Forms.Label();
             this.labelFeminin = new System.Windows.Forms.Label();
-            this.gunaCkBarbat = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.gunaaBtnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.gunaBtnMigrant = new Guna.UI2.WinForms.Guna2Button();
             this.gunaBtnSalvare = new Guna.UI2.WinForms.Guna2Button();
@@ -90,6 +86,10 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.gunaImgBtnX = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageRadioButtonMasculin = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.guna2ImageRadioButtonFeminin = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.guna2ImageRadioButtonUrban = new Guna.UI2.WinForms.Guna2ImageRadioButton();
+            this.guna2ImageRadioButtonRural = new Guna.UI2.WinForms.Guna2ImageRadioButton();
             this.guna2Panel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             this.gunaGbMediu.SuspendLayout();
@@ -632,10 +632,10 @@
             this.gunaGbMediu.BorderRadius = 58;
             this.gunaGbMediu.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.gunaGbMediu.BorderThickness = 2;
+            this.gunaGbMediu.Controls.Add(this.guna2ImageRadioButtonUrban);
+            this.gunaGbMediu.Controls.Add(this.guna2ImageRadioButtonRural);
             this.gunaGbMediu.Controls.Add(this.labelUrban);
             this.gunaGbMediu.Controls.Add(this.labelRural);
-            this.gunaGbMediu.Controls.Add(this.guna2ImageCheckBox1);
-            this.gunaGbMediu.Controls.Add(this.guna2ImageCheckBox2);
             this.gunaGbMediu.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(196)))));
             this.gunaGbMediu.CustomBorderThickness = new System.Windows.Forms.Padding(0);
             this.gunaGbMediu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(196)))));
@@ -668,40 +668,6 @@
             this.labelRural.Size = new System.Drawing.Size(42, 19);
             this.labelRural.TabIndex = 14;
             this.labelRural.Text = "Rural";
-            // 
-            // guna2ImageCheckBox1
-            // 
-            this.guna2ImageCheckBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageCheckBox1.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
-            this.guna2ImageCheckBox1.CheckedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2ImageCheckBox1.CheckedState.Parent = this.guna2ImageCheckBox1;
-            this.guna2ImageCheckBox1.HoverState.Parent = this.guna2ImageCheckBox1;
-            this.guna2ImageCheckBox1.Image = global::Proiect_PAW.Properties.Resources.house__1_;
-            this.guna2ImageCheckBox1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2ImageCheckBox1.IndicateFocus = false;
-            this.guna2ImageCheckBox1.Location = new System.Drawing.Point(16, 40);
-            this.guna2ImageCheckBox1.Name = "guna2ImageCheckBox1";
-            this.guna2ImageCheckBox1.PressedState.Parent = this.guna2ImageCheckBox1;
-            this.guna2ImageCheckBox1.Size = new System.Drawing.Size(44, 47);
-            this.guna2ImageCheckBox1.TabIndex = 12;
-            this.guna2ImageCheckBox1.UseTransparentBackground = true;
-            // 
-            // guna2ImageCheckBox2
-            // 
-            this.guna2ImageCheckBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageCheckBox2.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
-            this.guna2ImageCheckBox2.CheckedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2ImageCheckBox2.CheckedState.Parent = this.guna2ImageCheckBox2;
-            this.guna2ImageCheckBox2.HoverState.Parent = this.guna2ImageCheckBox2;
-            this.guna2ImageCheckBox2.Image = global::Proiect_PAW.Properties.Resources.united_arab_emirates;
-            this.guna2ImageCheckBox2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2ImageCheckBox2.IndicateFocus = false;
-            this.guna2ImageCheckBox2.Location = new System.Drawing.Point(129, 40);
-            this.guna2ImageCheckBox2.Name = "guna2ImageCheckBox2";
-            this.guna2ImageCheckBox2.PressedState.Parent = this.guna2ImageCheckBox2;
-            this.guna2ImageCheckBox2.Size = new System.Drawing.Size(44, 47);
-            this.guna2ImageCheckBox2.TabIndex = 13;
-            this.guna2ImageCheckBox2.UseTransparentBackground = true;
             // 
             // gunaGbDatePersonale
             // 
@@ -952,10 +918,10 @@
             this.gunaGbSex.BorderRadius = 58;
             this.gunaGbSex.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.gunaGbSex.BorderThickness = 2;
-            this.gunaGbSex.Controls.Add(this.gunaCkFemeie);
+            this.gunaGbSex.Controls.Add(this.guna2ImageRadioButtonMasculin);
             this.gunaGbSex.Controls.Add(this.labelMasculin);
+            this.gunaGbSex.Controls.Add(this.guna2ImageRadioButtonFeminin);
             this.gunaGbSex.Controls.Add(this.labelFeminin);
-            this.gunaGbSex.Controls.Add(this.gunaCkBarbat);
             this.gunaGbSex.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(196)))));
             this.gunaGbSex.CustomBorderThickness = new System.Windows.Forms.Padding(0);
             this.gunaGbSex.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(196)))));
@@ -969,23 +935,6 @@
             this.gunaGbSex.Text = "Sex";
             this.gunaGbSex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaGbSex.Click += new System.EventHandler(this.gunaGbSex_Click);
-            // 
-            // gunaCkFemeie
-            // 
-            this.gunaCkFemeie.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCkFemeie.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
-            this.gunaCkFemeie.CheckedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCkFemeie.CheckedState.Parent = this.gunaCkFemeie;
-            this.gunaCkFemeie.HoverState.Parent = this.gunaCkFemeie;
-            this.gunaCkFemeie.Image = global::Proiect_PAW.Properties.Resources.woman;
-            this.gunaCkFemeie.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCkFemeie.IndicateFocus = false;
-            this.gunaCkFemeie.Location = new System.Drawing.Point(7, 40);
-            this.gunaCkFemeie.Name = "gunaCkFemeie";
-            this.gunaCkFemeie.PressedState.Parent = this.gunaCkFemeie;
-            this.gunaCkFemeie.Size = new System.Drawing.Size(44, 47);
-            this.gunaCkFemeie.TabIndex = 12;
-            this.gunaCkFemeie.UseTransparentBackground = true;
             // 
             // labelMasculin
             // 
@@ -1006,23 +955,6 @@
             this.labelFeminin.Size = new System.Drawing.Size(59, 19);
             this.labelFeminin.TabIndex = 14;
             this.labelFeminin.Text = "Feminin";
-            // 
-            // gunaCkBarbat
-            // 
-            this.gunaCkBarbat.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCkBarbat.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
-            this.gunaCkBarbat.CheckedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCkBarbat.CheckedState.Parent = this.gunaCkBarbat;
-            this.gunaCkBarbat.HoverState.Parent = this.gunaCkBarbat;
-            this.gunaCkBarbat.Image = global::Proiect_PAW.Properties.Resources.man;
-            this.gunaCkBarbat.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCkBarbat.IndicateFocus = false;
-            this.gunaCkBarbat.Location = new System.Drawing.Point(129, 40);
-            this.gunaCkBarbat.Name = "gunaCkBarbat";
-            this.gunaCkBarbat.PressedState.Parent = this.gunaCkBarbat;
-            this.gunaCkBarbat.Size = new System.Drawing.Size(44, 47);
-            this.gunaCkBarbat.TabIndex = 13;
-            this.gunaCkBarbat.UseTransparentBackground = true;
             // 
             // gunaaBtnCancel
             // 
@@ -1183,6 +1115,74 @@
             this.gunaImgBtnX.UseTransparentBackground = true;
             this.gunaImgBtnX.Click += new System.EventHandler(this.gunaImgBtnX_Click);
             // 
+            // guna2ImageRadioButtonMasculin
+            // 
+            this.guna2ImageRadioButtonMasculin.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageRadioButtonMasculin.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
+            this.guna2ImageRadioButtonMasculin.CheckedState.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageRadioButtonMasculin.CheckedState.Parent = this.guna2ImageRadioButtonMasculin;
+            this.guna2ImageRadioButtonMasculin.HoverState.Parent = this.guna2ImageRadioButtonMasculin;
+            this.guna2ImageRadioButtonMasculin.Image = global::Proiect_PAW.Properties.Resources.man;
+            this.guna2ImageRadioButtonMasculin.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageRadioButtonMasculin.IndicateFocus = false;
+            this.guna2ImageRadioButtonMasculin.Location = new System.Drawing.Point(126, 40);
+            this.guna2ImageRadioButtonMasculin.Name = "guna2ImageRadioButtonMasculin";
+            this.guna2ImageRadioButtonMasculin.PressedState.Parent = this.guna2ImageRadioButtonMasculin;
+            this.guna2ImageRadioButtonMasculin.Size = new System.Drawing.Size(60, 43);
+            this.guna2ImageRadioButtonMasculin.TabIndex = 39;
+            this.guna2ImageRadioButtonMasculin.UseTransparentBackground = true;
+            // 
+            // guna2ImageRadioButtonFeminin
+            // 
+            this.guna2ImageRadioButtonFeminin.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageRadioButtonFeminin.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
+            this.guna2ImageRadioButtonFeminin.CheckedState.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageRadioButtonFeminin.CheckedState.Parent = this.guna2ImageRadioButtonFeminin;
+            this.guna2ImageRadioButtonFeminin.HoverState.Parent = this.guna2ImageRadioButtonFeminin;
+            this.guna2ImageRadioButtonFeminin.Image = global::Proiect_PAW.Properties.Resources.woman;
+            this.guna2ImageRadioButtonFeminin.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageRadioButtonFeminin.IndicateFocus = false;
+            this.guna2ImageRadioButtonFeminin.Location = new System.Drawing.Point(3, 40);
+            this.guna2ImageRadioButtonFeminin.Name = "guna2ImageRadioButtonFeminin";
+            this.guna2ImageRadioButtonFeminin.PressedState.Parent = this.guna2ImageRadioButtonFeminin;
+            this.guna2ImageRadioButtonFeminin.Size = new System.Drawing.Size(59, 43);
+            this.guna2ImageRadioButtonFeminin.TabIndex = 38;
+            this.guna2ImageRadioButtonFeminin.UseTransparentBackground = true;
+            // 
+            // guna2ImageRadioButtonUrban
+            // 
+            this.guna2ImageRadioButtonUrban.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageRadioButtonUrban.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
+            this.guna2ImageRadioButtonUrban.CheckedState.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageRadioButtonUrban.CheckedState.Parent = this.guna2ImageRadioButtonUrban;
+            this.guna2ImageRadioButtonUrban.HoverState.Parent = this.guna2ImageRadioButtonUrban;
+            this.guna2ImageRadioButtonUrban.Image = global::Proiect_PAW.Properties.Resources.united_arab_emirates;
+            this.guna2ImageRadioButtonUrban.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageRadioButtonUrban.IndicateFocus = false;
+            this.guna2ImageRadioButtonUrban.Location = new System.Drawing.Point(124, 40);
+            this.guna2ImageRadioButtonUrban.Name = "guna2ImageRadioButtonUrban";
+            this.guna2ImageRadioButtonUrban.PressedState.Parent = this.guna2ImageRadioButtonUrban;
+            this.guna2ImageRadioButtonUrban.Size = new System.Drawing.Size(60, 43);
+            this.guna2ImageRadioButtonUrban.TabIndex = 41;
+            this.guna2ImageRadioButtonUrban.UseTransparentBackground = true;
+            // 
+            // guna2ImageRadioButtonRural
+            // 
+            this.guna2ImageRadioButtonRural.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageRadioButtonRural.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
+            this.guna2ImageRadioButtonRural.CheckedState.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageRadioButtonRural.CheckedState.Parent = this.guna2ImageRadioButtonRural;
+            this.guna2ImageRadioButtonRural.HoverState.Parent = this.guna2ImageRadioButtonRural;
+            this.guna2ImageRadioButtonRural.Image = global::Proiect_PAW.Properties.Resources.house__1_;
+            this.guna2ImageRadioButtonRural.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2ImageRadioButtonRural.IndicateFocus = false;
+            this.guna2ImageRadioButtonRural.Location = new System.Drawing.Point(1, 40);
+            this.guna2ImageRadioButtonRural.Name = "guna2ImageRadioButtonRural";
+            this.guna2ImageRadioButtonRural.PressedState.Parent = this.guna2ImageRadioButtonRural;
+            this.guna2ImageRadioButtonRural.Size = new System.Drawing.Size(59, 43);
+            this.guna2ImageRadioButtonRural.TabIndex = 40;
+            this.guna2ImageRadioButtonRural.UseTransparentBackground = true;
+            // 
             // FormAddPers_Date
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1234,7 +1234,6 @@
         private Guna.UI2.WinForms.Guna2TextBox gunaTbNationalitate;
         private Guna.UI2.WinForms.Guna2TextBox gunaTbCNP;
         private Guna.UI2.WinForms.Guna2TextBox gunaTbNume;
-        private Guna.UI2.WinForms.Guna2ImageCheckBox gunaCkBarbat;
         private System.Windows.Forms.Label labelFeminin;
         private Guna.UI2.WinForms.Guna2GroupBox gunaGbSex;
         private System.Windows.Forms.Label labelMasculin;
@@ -1257,8 +1256,6 @@
         private Guna.UI2.WinForms.Guna2GroupBox gunaGbMediu;
         private System.Windows.Forms.Label labelUrban;
         private System.Windows.Forms.Label labelRural;
-        private Guna.UI2.WinForms.Guna2ImageCheckBox guna2ImageCheckBox1;
-        private Guna.UI2.WinForms.Guna2ImageCheckBox guna2ImageCheckBox2;
         private Guna.UI2.WinForms.Guna2ComboBox gunaCbCalitateOcupant;
         private Guna.UI2.WinForms.Guna2HScrollBar gunaHScrollBarNrCamere;
         private System.Windows.Forms.Label labelNrCamereDeLocuit;
@@ -1268,7 +1265,6 @@
         private Guna.UI2.WinForms.Guna2Panel gunaPanelSuprafete1;
         private Guna.UI2.WinForms.Guna2Panel gunaPanelSuprafete2;
         private Guna.UI2.WinForms.Guna2Panel gunaPanelSuprafete3;
-        private Guna.UI2.WinForms.Guna2ImageCheckBox gunaCkFemeie;
         private System.Windows.Forms.Label labelAni;
         private System.Windows.Forms.Label labelNrPers;
         private System.Windows.Forms.Label labelNrCam;
@@ -1278,5 +1274,9 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private System.Windows.Forms.Label labelAdresa;
         private System.Windows.Forms.Label labelLocalitate;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButtonUrban;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButtonRural;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButtonMasculin;
+        private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButtonFeminin;
     }
 }

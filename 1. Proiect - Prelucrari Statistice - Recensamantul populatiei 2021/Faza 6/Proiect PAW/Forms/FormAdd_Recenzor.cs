@@ -91,28 +91,28 @@ namespace Proiect_PAW.Forms
             else
             {
                 labelAni.Visible = true;
-                labelAni.Text = currentAge.ToString() + " ani" + currentMonth.ToString() + " luni";
+                labelAni.Text = currentAge.ToString() + " ani " + currentMonth.ToString() + " luni";
                 gunaImgCkData.Checked = true;
                 errorProvider1.SetError(guna2DateTimePicker1, null);
             }
 
         }
-        //CNP
-        private void gunaTbCNP_TextChanged(object sender, EventArgs e)
+        //COD RECENZOR
+        private void gunaTbCodRecenzor_TextChanged(object sender, EventArgs e)
         {
-            if ((gunaTbCNP.Text == "") || (gunaTbCNP.Text.Length != 13))
+            if ((gunaTbCodRecenzor.Text == "") || (gunaTbCodRecenzor.Text.Length != 4))
             {
-                errorProvider1.SetError(gunaTbCNP, "Introduceti CNP-ul de 13 caractere!");
+                errorProvider1.SetError(gunaTbCodRecenzor, "Introduceti codul de 4 caractere!");
                 gunaImgCkCNP.Checked = false;
             }
             else
             {
                 gunaImgCkCNP.Checked = true;
-                errorProvider1.SetError(gunaTbCNP, null);
+                errorProvider1.SetError(gunaTbCodRecenzor, null);
             }
         }
 
-        private void gunaTbCNP_KeyPress(object sender, KeyPressEventArgs e)
+        private void gunaTbCodRecenzor_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar >= '0' && e.KeyChar <= '9' || e.KeyChar == (char)8)
                 e.Handled = false;
@@ -330,7 +330,7 @@ namespace Proiect_PAW.Forms
             List<Classes.Recenzor> listaRecenzori = new List<Classes.Recenzor>();
             try
             {
-                //List<string> numeComplet = UC_PanouRecenzori.gunagdvRecenzori.Row[0].Cells[1].Value.ToString();
+                
             }
             catch
             {

@@ -194,11 +194,11 @@ namespace Proiect_PAW
         private void gunaGbSex_Click(object sender, EventArgs e)
         {
 
-            if (gunaCkFemeie.Checked = true)
+            if (guna2ImageRadioButtonFeminin.Checked = true)
             {
-                gunaCkBarbat.Checked = false;
+                guna2ImageRadioButtonMasculin.Checked = false;
             }else {
-                gunaCkBarbat.Checked = true;
+                guna2ImageRadioButtonMasculin.Checked = true;
             }
 
             
