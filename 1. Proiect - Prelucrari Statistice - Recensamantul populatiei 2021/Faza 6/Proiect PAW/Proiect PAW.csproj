@@ -406,6 +406,7 @@
     <None Include="Resources\romania %281%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\list.png" />
     <Content Include="ro.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

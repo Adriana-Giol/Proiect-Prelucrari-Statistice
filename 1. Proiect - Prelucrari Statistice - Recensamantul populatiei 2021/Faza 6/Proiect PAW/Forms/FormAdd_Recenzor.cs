@@ -130,8 +130,13 @@ namespace Proiect_PAW.Forms
 
 
         //SEX
-        /* if ((gunaImgCkFem.Checked == false) || (gunaImgCkMasc.Checked = false))
-                 errorProvider1.SetError(gunaGbSex, "Selectati sexul!");*/
+
+        private void gunaGbSex_Validating(object sender, CancelEventArgs e)
+        {
+            if ((guna2ImageRadioButtonFeminin.Checked == false) && (guna2ImageRadioButtonMasculin.Checked = false))
+                errorProvider1.SetError(gunaGbSex, "Selectati sexul!");
+        }
+
         //JUDET
         private void gunaCbJudet_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -355,6 +360,8 @@ namespace Proiect_PAW.Forms
 
                     Recenzor recenzor = new Recenzor(codRecenzor, numeComplet, dataNasterii, sex, regiuneRecenzata, judetRecenzat, localitateRecenzata);
                     MessageBox.Show(recenzor.ToString());
+
+                 
                 }
 
 

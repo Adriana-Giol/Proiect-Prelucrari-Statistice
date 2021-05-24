@@ -7,14 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proiect_PAW.Forms;
 
 namespace Proiect_PAW
 {
     public partial class UC_PanouRecenzori : UserControl
     {
-        internal static object gunadgvRecenzat;
+        DataTable dt = new DataTable();
+        FormAdd_Recenzor formAdd_Recenzor = new FormAdd_Recenzor();
 
-        
+
 
         public UC_PanouRecenzori()
         {
@@ -95,6 +97,19 @@ namespace Proiect_PAW
         
         }
 
-        
+        private void UC_PanouRecenzori_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void importDateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void afisarePersoaneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
