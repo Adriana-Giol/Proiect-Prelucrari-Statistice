@@ -7,26 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Proiect_PAW.Classes;
-using Guna.UI2.WinForms;
 
 namespace Proiect_PAW
 {
     public partial class UC_PanouRecenzori : UserControl
     {
+        internal static object gunadgvRecenzat;
 
         
 
-        public UC_PanouRecenzori(List<Recenzor> listaRecenzori)
+        public UC_PanouRecenzori()
         {
             InitializeComponent();
-          
+            //listaRecenzoriForm2 = listaRecenzori;
             
         }
 
-        public UC_PanouRecenzori()
-        {
-        }
 
         private void previzualizareToolStripMenuItem_Click(object sender, EventArgs e)
         {/*
@@ -48,6 +44,25 @@ namespace Proiect_PAW
 
         }
 
+        private void gunaBtnSterge_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewCell recenzor in gunagdvRecenzori.SelectedCells)
+                if (recenzor.Selected)
+                {
+                    gunagdvRecenzori.Rows.RemoveAt(recenzor.RowIndex);
+                }
+        }
+
+        private void stergeRecenzorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewCell recenzor in gunagdvRecenzori.SelectedCells)
+                if (recenzor.Selected)
+                {
+                    gunagdvRecenzori.Rows.RemoveAt(recenzor.RowIndex);
+                }
+        }
+
+       
 
         private void gunaImgBtnLocuinta_Click(object sender, EventArgs e)
         {
@@ -80,5 +95,6 @@ namespace Proiect_PAW
         
         }
 
+        
     }
 }

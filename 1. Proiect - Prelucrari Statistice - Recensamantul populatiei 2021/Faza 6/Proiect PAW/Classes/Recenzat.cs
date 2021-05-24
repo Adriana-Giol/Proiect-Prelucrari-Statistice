@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proiect_PAW
 {
-    public class Recenzat: Persoana
+    public class Recenzat : Persoana
     {
         //DEFINIRE ATRIBUTE
         private string cnp;
@@ -17,7 +17,7 @@ namespace Proiect_PAW
 
 
         //CONSTRUCTOR FARA PARAMETRI
-        public Recenzat():base()
+        public Recenzat() : base()
         {
             this.cnp = " ";
             this.stareCivila = "Necasatorit";
@@ -26,11 +26,11 @@ namespace Proiect_PAW
             this.identitateCulturala = new IdentitateCulturala();
         }
 
-     
+
 
         //CONSTRUCTOR CU PARAMETRI
         public Recenzat(string numeComplet, DateTime dataNasterii, string sex, string cnp, string stareCivila, string nationalitate, Locuinta locuinta, IdentitateCulturala identitateCulturala)
-            :base(numeComplet, dataNasterii,sex)
+            : base(numeComplet, dataNasterii, sex)
         {
             this.cnp = cnp;
             this.stareCivila = stareCivila;

@@ -1,5 +1,4 @@
-﻿using Proiect_PAW.Classes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +12,8 @@ namespace Proiect_PAW.Forms
 {
     public partial class FormAdd_Recenzor : Form
     {
-        
+        public object gunagdvRecenzori { get; private set; }
+
         public FormAdd_Recenzor()
         {
             InitializeComponent();
@@ -91,24 +91,24 @@ namespace Proiect_PAW.Forms
             else
             {
                 labelAni.Visible = true;
-                labelAni.Text = currentAge.ToString() + " ani " + currentMonth.ToString() + " luni";
+                labelAni.Text = currentAge.ToString() + " ani" + currentMonth.ToString() + " luni";
                 gunaImgCkData.Checked = true;
                 errorProvider1.SetError(guna2DateTimePicker1, null);
             }
 
         }
         //CNP
-        private void gunaTbCodRecenzor_TextChanged(object sender, EventArgs e)
+        private void gunaTbCNP_TextChanged(object sender, EventArgs e)
         {
-            if ((gunaTbCodRecenzor.Text == "") || (gunaTbCodRecenzor.Text.Length != 4))
+            if ((gunaTbCNP.Text == "") || (gunaTbCNP.Text.Length != 13))
             {
-                errorProvider1.SetError(gunaTbCodRecenzor, "Introduceti codul recenzorului de 4 caractere!");
-                gunaImgCkCodRecenzor.Checked = false;
+                errorProvider1.SetError(gunaTbCNP, "Introduceti CNP-ul de 13 caractere!");
+                gunaImgCkCNP.Checked = false;
             }
             else
             {
-                gunaImgCkCodRecenzor.Checked = true;
-                errorProvider1.SetError(gunaTbCodRecenzor, null);
+                gunaImgCkCNP.Checked = true;
+                errorProvider1.SetError(gunaTbCNP, null);
             }
         }
 
@@ -123,12 +123,8 @@ namespace Proiect_PAW.Forms
 
 
         //SEX
-        private void gunaGbSex_Validating(object sender, CancelEventArgs e)
-        {
-            if ((guna2ImageRadioButtonFeminin.Checked == false) && (guna2ImageRadioButtonMasculin.Checked = false))
-                errorProvider1.SetError(gunaGbSex, "Selectati sexul!");
-        }
-       
+        /* if ((gunaImgCkFem.Checked == false) || (gunaImgCkMasc.Checked = false))
+                 errorProvider1.SetError(gunaGbSex, "Selectati sexul!");*/
         //JUDET
         private void gunaCbJudet_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -331,47 +327,19 @@ namespace Proiect_PAW.Forms
 
       private void gunaBtnSalvare_Click(object sender, EventArgs e)
         {
-            
-            List<Recenzor> listaRecenzori = new List<Recenzor>();
-
+            List<Classes.Recenzor> listaRecenzori = new List<Classes.Recenzor>();
             try
             {
-                
-                string numeComplet = gunaTbNume.Text;
-                string codRecenzor = gunaTbCodRecenzor.Text;
-                DateTime dataNasterii = Convert.ToDateTime(guna2DateTimePicker1.Text);
-                string sex = string.Empty;
-                if (guna2ImageRadioButtonFeminin.Checked)
-                    sex = "Feminin";
-                else
-                    sex = "Masculin";
-                string regiuneRecenzata = gunaCbRegiune.Text;
-                string judetRecenzat = gunaCbJudet.Text;
-                string localitateRecenzata = gunaTbLocalitate.Text;
-
-                Recenzor recenzor = new Recenzor(codRecenzor, numeComplet, dataNasterii, sex, regiuneRecenzata, judetRecenzat, localitateRecenzata);
-                MessageBox.Show(recenzor.ToString());
-                listaRecenzori.Add(recenzor);
-
+                //List<string> numeComplet = UC_PanouRecenzori.gunagdvRecenzori.Row[0].Cells[1].Value.ToString();
             }
-            catch(Exception ex)
+            catch
             {
-                MessageBox.Show(ex.Message);
+
             }
             finally
             {
-                gunaTbNume.Clear();
-                gunaTbCodRecenzor.Clear();
-                gunaTbLocalitate.Clear();
-                guna2ImageRadioButtonFeminin.Checked = false;
-                guna2ImageRadioButtonMasculin.Checked = false;
-                gunaCbRegiune.Text = " ";
-                gunaCbJudet.Text = " ";
-                errorProvider1.Clear();
-                this.Close();
+
             }
         }
-
-       
     }
 }

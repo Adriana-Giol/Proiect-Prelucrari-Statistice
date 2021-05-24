@@ -194,12 +194,11 @@ namespace Proiect_PAW
         private void gunaGbSex_Click(object sender, EventArgs e)
         {
 
-            if (guna2ImageRadioButtonFeminin.Checked == true)
+            if (gunaCkFemeie.Checked = true)
             {
-                guna2ImageRadioButtonMasculin.Visible = false;
-            }else if  (guna2ImageRadioButtonMasculin.Checked == true) 
-            {
-                guna2ImageRadioButtonFeminin.Visible = false;
+                gunaCkBarbat.Checked = false;
+            }else {
+                gunaCkBarbat.Checked = true;
             }
 
             
@@ -209,12 +208,5 @@ namespace Proiect_PAW
         {
 
         }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-      
     }
 }

@@ -22,7 +22,7 @@ namespace Proiect_PAW.Classes
             this.regiuneRecenzata = " ";
             this.localitateRecenzata = " ";
             this.judetRecenzat = " ";
-     
+
 
         }
 
@@ -41,7 +41,7 @@ namespace Proiect_PAW.Classes
         public string RegiuneRecenzata { get => regiuneRecenzata; set => regiuneRecenzata = value; }
         public string JudetRecenzat { get => judetRecenzat; set => judetRecenzat = value; }
         public string LocalitateRecenzata { get => localitateRecenzata; set => localitateRecenzata = value; }
- 
+
 
 
         //TO STRING

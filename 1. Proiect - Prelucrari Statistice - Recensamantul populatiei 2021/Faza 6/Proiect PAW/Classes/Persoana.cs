@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Proiect_PAW
 {
-    [Serializable] 
-    public abstract class Persoana {
+    [Serializable]
+    public abstract class Persoana
+    {
 
         //DEFINIRE ATRIBUTE
         protected string numeComplet;
@@ -22,17 +23,17 @@ namespace Proiect_PAW
             this.numeComplet = " ";
             this.dataNasterii = System.DateTime.Now;
             this.sex = " ";
-            
+
         }
 
-     
+
         //CONSTRUCTOR CU TOTI PARAMETRI
         public Persoana(string numeComplet, DateTime dataNasterii, string sex)
         {
             this.numeComplet = numeComplet;
             this.dataNasterii = dataNasterii;
             this.sex = sex;
-           
+
         }
 
 
@@ -50,7 +51,7 @@ namespace Proiect_PAW
         public override string ToString()
         {
             //Afisare pentru lista de nume
-            string afisare1 = "Persoana cu numele " + numeComplet +  ", de sex " + sex + " fiind nascuta la data de " + dataNasterii;
+            string afisare1 = "Persoana cu numele " + numeComplet + ", de sex " + sex + " fiind nascuta la data de " + dataNasterii;
 
 
             return afisare1;
@@ -60,7 +61,7 @@ namespace Proiect_PAW
 
         //METODA ABSTRACTA
         public abstract void calculareVarstaActuala();
-  
-      
+
+
     }
 }
