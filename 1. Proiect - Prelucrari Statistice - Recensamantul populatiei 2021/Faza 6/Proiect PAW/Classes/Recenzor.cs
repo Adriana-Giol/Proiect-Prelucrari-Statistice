@@ -47,8 +47,9 @@ namespace Proiect_PAW.Classes
         //TO STRING
         public override string ToString()
         {
-            string afisare1 = ".Persoana se ocupa de recenzarea zonei " + regiuneRecenzata
-                 + " din localitatea" + localitateRecenzata + ", judetul " + judetRecenzat;
+            string afisare1 = " se ocupa de recenzarea zonei " + regiuneRecenzata + ", judetul " + judetRecenzat
+                  + ", localitatea " + localitateRecenzata + "." + Environment.NewLine
+                  + " Recenzorul are codul " + codRecenzor;
 
 
             return base.ToString() + afisare1;

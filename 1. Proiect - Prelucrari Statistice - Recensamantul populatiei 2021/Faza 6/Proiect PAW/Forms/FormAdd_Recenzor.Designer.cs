@@ -726,6 +726,7 @@
             this.gunaBtnSalvare.TabIndex = 5;
             this.gunaBtnSalvare.Text = "Salvare";
             this.gunaBtnSalvare.UseTransparentBackground = true;
+            this.gunaBtnSalvare.Click += new System.EventHandler(this.gunaBtnSalvare_Click);
             // 
             // guna2Elipse1
             // 

@@ -51,7 +51,7 @@ namespace Proiect_PAW
         public override string ToString()
         {
             //Afisare pentru lista de nume
-            string afisare1 = "Persoana cu numele " + numeComplet + ", de sex " + sex + " fiind nascuta la data de " + dataNasterii;
+            string afisare1 = numeComplet + ", de sex " + sex + ", nascut/a la data de " + dataNasterii;
 
 
             return afisare1;

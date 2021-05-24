@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proiect_PAW.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,13 +15,18 @@ namespace Proiect_PAW.Forms
     {
         public object gunagdvRecenzori { get; private set; }
 
+
         public FormAdd_Recenzor()
         {
             InitializeComponent();
+
         }
         private void FormAdd_Recenzor_Load(object sender, EventArgs e)
         {
             labelAni.Visible = false;
+       
+
+            //CREARE DATA TABLE PENTRU REGIUNE
             DataTable tbReg = new DataTable();
             tbReg.Columns.Add("id");
             tbReg.Columns.Add("Valoare");
@@ -38,6 +44,7 @@ namespace Proiect_PAW.Forms
             gunaCbRegiune.DataSource = tbReg;
             gunaCbRegiune.DisplayMember = "Valoare";
             gunaCbRegiune.ValueMember = "id";
+  
 
         }
 
@@ -176,7 +183,7 @@ namespace Proiect_PAW.Forms
             tbJud.Columns.Add("id");
             tbJud.Columns.Add("Valoare");
 
-          
+
 
             if (gunaCbRegiune.SelectedIndex == -1)
             {
@@ -325,21 +332,53 @@ namespace Proiect_PAW.Forms
             }
         }
 
-      private void gunaBtnSalvare_Click(object sender, EventArgs e)
+        private void gunaBtnSalvare_Click(object sender, EventArgs e)
         {
-            List<Classes.Recenzor> listaRecenzori = new List<Classes.Recenzor>();
-            try
-            {
-                
-            }
-            catch
-            {
 
-            }
-            finally
-            {
+            List<Recenzor> listaRecenzori = new List<Recenzor>();
 
-            }
+           
+                try
+                {
+
+                    string numeComplet = gunaTbNume.Text;
+                    string codRecenzor = gunaTbCodRecenzor.Text;
+                    DateTime dataNasterii = Convert.ToDateTime(guna2DateTimePicker1.Text);
+                    string sex = string.Empty;
+                    if (guna2ImageRadioButtonFeminin.Checked)
+                        sex = "Feminin";
+                    else
+                        sex = "Masculin";
+                    string regiuneRecenzata = gunaCbRegiune.Text;
+                    string judetRecenzat = gunaCbJudet.Text;
+                    string localitateRecenzata = gunaTbLocalitate.Text;
+
+                    Recenzor recenzor = new Recenzor(codRecenzor, numeComplet, dataNasterii, sex, regiuneRecenzata, judetRecenzat, localitateRecenzata);
+                    MessageBox.Show(recenzor.ToString());
+                }
+
+
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    gunaTbNume.Clear();
+                    gunaTbCodRecenzor.Clear();
+                    gunaTbLocalitate.Clear();
+                    guna2ImageRadioButtonFeminin.Checked = false;
+                    guna2ImageRadioButtonMasculin.Checked = false;
+                    guna2DateTimePicker1.Value = System.DateTime.Now;
+                    gunaCbRegiune.SelectedIndex = -1;
+                    gunaCbJudet.SelectedIndex = -1;
+                    errorProvider1.Clear();
+                    
+
+                }
+            
+            
         }
     }
 }
