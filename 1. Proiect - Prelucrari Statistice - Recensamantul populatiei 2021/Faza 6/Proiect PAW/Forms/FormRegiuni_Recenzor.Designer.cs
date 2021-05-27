@@ -255,17 +255,18 @@
             treeNode113});
             System.Windows.Forms.TreeNode treeNode115 = new System.Windows.Forms.TreeNode("Moldova", new System.Windows.Forms.TreeNode[] {
             treeNode114});
-            System.Windows.Forms.TreeNode treeNode116 = new System.Windows.Forms.TreeNode("Brasov");
-            System.Windows.Forms.TreeNode treeNode117 = new System.Windows.Forms.TreeNode("Covasna");
-            System.Windows.Forms.TreeNode treeNode118 = new System.Windows.Forms.TreeNode("Harghita");
-            System.Windows.Forms.TreeNode treeNode119 = new System.Windows.Forms.TreeNode("Mures");
-            System.Windows.Forms.TreeNode treeNode120 = new System.Windows.Forms.TreeNode("Sibiu");
-            System.Windows.Forms.TreeNode treeNode121 = new System.Windows.Forms.TreeNode("Alba");
-            System.Windows.Forms.TreeNode treeNode122 = new System.Windows.Forms.TreeNode("Deva");
-            System.Windows.Forms.TreeNode treeNode123 = new System.Windows.Forms.TreeNode("Cluj");
-            System.Windows.Forms.TreeNode treeNode124 = new System.Windows.Forms.TreeNode("Bistrita-Nasaud");
-            System.Windows.Forms.TreeNode treeNode125 = new System.Windows.Forms.TreeNode("Salaj");
-            System.Windows.Forms.TreeNode treeNode126 = new System.Windows.Forms.TreeNode("Transilvania", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode116 = new System.Windows.Forms.TreeNode("Nenitescu Razvan");
+            System.Windows.Forms.TreeNode treeNode117 = new System.Windows.Forms.TreeNode("Brasov");
+            System.Windows.Forms.TreeNode treeNode118 = new System.Windows.Forms.TreeNode("Covasna");
+            System.Windows.Forms.TreeNode treeNode119 = new System.Windows.Forms.TreeNode("Harghita");
+            System.Windows.Forms.TreeNode treeNode120 = new System.Windows.Forms.TreeNode("Mures");
+            System.Windows.Forms.TreeNode treeNode121 = new System.Windows.Forms.TreeNode("Sibiu");
+            System.Windows.Forms.TreeNode treeNode122 = new System.Windows.Forms.TreeNode("Alba");
+            System.Windows.Forms.TreeNode treeNode123 = new System.Windows.Forms.TreeNode("Deva");
+            System.Windows.Forms.TreeNode treeNode124 = new System.Windows.Forms.TreeNode("Cluj");
+            System.Windows.Forms.TreeNode treeNode125 = new System.Windows.Forms.TreeNode("Bistrita-Nasaud");
+            System.Windows.Forms.TreeNode treeNode126 = new System.Windows.Forms.TreeNode("Salaj");
+            System.Windows.Forms.TreeNode treeNode127 = new System.Windows.Forms.TreeNode("Transilvania", new System.Windows.Forms.TreeNode[] {
             treeNode116,
             treeNode117,
             treeNode118,
@@ -275,48 +276,55 @@
             treeNode122,
             treeNode123,
             treeNode124,
-            treeNode125});
-            System.Windows.Forms.TreeNode treeNode127 = new System.Windows.Forms.TreeNode("Maramures");
-            System.Windows.Forms.TreeNode treeNode128 = new System.Windows.Forms.TreeNode("Satu-Mare");
-            System.Windows.Forms.TreeNode treeNode129 = new System.Windows.Forms.TreeNode("Maramures", new System.Windows.Forms.TreeNode[] {
-            treeNode127,
-            treeNode128});
-            System.Windows.Forms.TreeNode treeNode130 = new System.Windows.Forms.TreeNode("Bihor");
-            System.Windows.Forms.TreeNode treeNode131 = new System.Windows.Forms.TreeNode("Arad");
-            System.Windows.Forms.TreeNode treeNode132 = new System.Windows.Forms.TreeNode("Crisana", new System.Windows.Forms.TreeNode[] {
-            treeNode130,
-            treeNode131});
-            System.Windows.Forms.TreeNode treeNode133 = new System.Windows.Forms.TreeNode("Timis");
-            System.Windows.Forms.TreeNode treeNode134 = new System.Windows.Forms.TreeNode("Caras-Severin");
-            System.Windows.Forms.TreeNode treeNode135 = new System.Windows.Forms.TreeNode("Banat", new System.Windows.Forms.TreeNode[] {
-            treeNode133,
+            treeNode125,
+            treeNode126});
+            System.Windows.Forms.TreeNode treeNode128 = new System.Windows.Forms.TreeNode("Maramures");
+            System.Windows.Forms.TreeNode treeNode129 = new System.Windows.Forms.TreeNode("Satu-Mare");
+            System.Windows.Forms.TreeNode treeNode130 = new System.Windows.Forms.TreeNode("Ionescu Vlad", new System.Windows.Forms.TreeNode[] {
+            treeNode128,
+            treeNode129});
+            System.Windows.Forms.TreeNode treeNode131 = new System.Windows.Forms.TreeNode("Maramures", new System.Windows.Forms.TreeNode[] {
+            treeNode130});
+            System.Windows.Forms.TreeNode treeNode132 = new System.Windows.Forms.TreeNode("Bihor");
+            System.Windows.Forms.TreeNode treeNode133 = new System.Windows.Forms.TreeNode("Arad");
+            System.Windows.Forms.TreeNode treeNode134 = new System.Windows.Forms.TreeNode("Georgescu Simona", new System.Windows.Forms.TreeNode[] {
+            treeNode132,
+            treeNode133});
+            System.Windows.Forms.TreeNode treeNode135 = new System.Windows.Forms.TreeNode("Crisana", new System.Windows.Forms.TreeNode[] {
             treeNode134});
-            System.Windows.Forms.TreeNode treeNode136 = new System.Windows.Forms.TreeNode("Mehedinti");
-            System.Windows.Forms.TreeNode treeNode137 = new System.Windows.Forms.TreeNode("Dolj");
-            System.Windows.Forms.TreeNode treeNode138 = new System.Windows.Forms.TreeNode("Gorj");
-            System.Windows.Forms.TreeNode treeNode139 = new System.Windows.Forms.TreeNode("Valcea");
-            System.Windows.Forms.TreeNode treeNode140 = new System.Windows.Forms.TreeNode("Oltenia", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode136 = new System.Windows.Forms.TreeNode("Timis");
+            System.Windows.Forms.TreeNode treeNode137 = new System.Windows.Forms.TreeNode("Caras-Severin");
+            System.Windows.Forms.TreeNode treeNode138 = new System.Windows.Forms.TreeNode("Nastase Rodica", new System.Windows.Forms.TreeNode[] {
             treeNode136,
-            treeNode137,
-            treeNode138,
-            treeNode139});
-            System.Windows.Forms.TreeNode treeNode141 = new System.Windows.Forms.TreeNode("Regiunile Romaniei", new System.Windows.Forms.TreeNode[] {
+            treeNode137});
+            System.Windows.Forms.TreeNode treeNode139 = new System.Windows.Forms.TreeNode("Banat", new System.Windows.Forms.TreeNode[] {
+            treeNode138});
+            System.Windows.Forms.TreeNode treeNode140 = new System.Windows.Forms.TreeNode("Mehedinti");
+            System.Windows.Forms.TreeNode treeNode141 = new System.Windows.Forms.TreeNode("Dolj");
+            System.Windows.Forms.TreeNode treeNode142 = new System.Windows.Forms.TreeNode("Gorj");
+            System.Windows.Forms.TreeNode treeNode143 = new System.Windows.Forms.TreeNode("Valcea");
+            System.Windows.Forms.TreeNode treeNode144 = new System.Windows.Forms.TreeNode("Minulescu Constantin", new System.Windows.Forms.TreeNode[] {
+            treeNode140,
+            treeNode141,
+            treeNode142,
+            treeNode143});
+            System.Windows.Forms.TreeNode treeNode145 = new System.Windows.Forms.TreeNode("Oltenia", new System.Windows.Forms.TreeNode[] {
+            treeNode144});
+            System.Windows.Forms.TreeNode treeNode146 = new System.Windows.Forms.TreeNode("Regiunile Romaniei", new System.Windows.Forms.TreeNode[] {
             treeNode17,
             treeNode87,
             treeNode106,
             treeNode115,
-            treeNode126,
-            treeNode129,
-            treeNode132,
+            treeNode127,
+            treeNode131,
             treeNode135,
-            treeNode140});
+            treeNode139,
+            treeNode145});
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.gunaBtnPopulareTreeView = new Guna.UI2.WinForms.Guna2Button();
             this.gunaaBtnSalvareInXML = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.labelBara = new System.Windows.Forms.Label();
@@ -325,7 +333,6 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2GroupBox1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -343,7 +350,7 @@
             // treeView1
             // 
             this.treeView1.BackColor = System.Drawing.Color.SkyBlue;
-            this.treeView1.Location = new System.Drawing.Point(15, 34);
+            this.treeView1.Location = new System.Drawing.Point(15, 36);
             this.treeView1.Name = "treeView1";
             treeNode1.Name = "Node51";
             treeNode1.Text = "Babadag";
@@ -379,6 +386,7 @@
             treeNode15.ForeColor = System.Drawing.Color.White;
             treeNode15.Name = "Node1";
             treeNode15.Text = "Constanta";
+            treeNode16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             treeNode16.Name = "Node138";
             treeNode16.Text = "Popescu Ion";
             treeNode17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -545,6 +553,7 @@
             treeNode85.ForeColor = System.Drawing.Color.White;
             treeNode85.Name = "Node4";
             treeNode85.Text = "Ialomita";
+            treeNode86.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             treeNode86.Name = "Node139";
             treeNode86.Text = "Dobrescu Marin";
             treeNode87.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -587,6 +596,7 @@
             treeNode104.ForeColor = System.Drawing.Color.White;
             treeNode104.Name = "Node14";
             treeNode104.Text = "Suceava";
+            treeNode105.ForeColor = System.Drawing.Color.Plum;
             treeNode105.Name = "Node140";
             treeNode105.Text = "Ioana Maria";
             treeNode106.BackColor = System.Drawing.Color.Plum;
@@ -621,77 +631,133 @@
             treeNode113.ForeColor = System.Drawing.Color.White;
             treeNode113.Name = "Node16";
             treeNode113.Text = "Galati";
+            treeNode114.ForeColor = System.Drawing.Color.DeepSkyBlue;
             treeNode114.Name = "Node141";
             treeNode114.Text = "Ionescu Radu";
             treeNode115.BackColor = System.Drawing.Color.DeepSkyBlue;
             treeNode115.ForeColor = System.Drawing.Color.White;
             treeNode115.Name = "Node15";
             treeNode115.Text = "Moldova";
-            treeNode116.Name = "Node25";
-            treeNode116.Text = "Brasov";
-            treeNode117.Name = "Node26";
-            treeNode117.Text = "Covasna";
-            treeNode118.Name = "Node27";
-            treeNode118.Text = "Harghita";
-            treeNode119.Name = "Node28";
-            treeNode119.Text = "Mures";
-            treeNode120.Name = "Node29";
-            treeNode120.Text = "Sibiu";
-            treeNode121.Name = "Node30";
-            treeNode121.Text = "Alba";
-            treeNode122.Name = "Node31";
-            treeNode122.Text = "Deva";
-            treeNode123.Name = "Node32";
-            treeNode123.Text = "Cluj";
-            treeNode124.Name = "Node34";
-            treeNode124.Text = "Bistrita-Nasaud";
-            treeNode125.Name = "Node35";
-            treeNode125.Text = "Salaj";
+            treeNode116.ForeColor = System.Drawing.Color.SeaGreen;
+            treeNode116.Name = "Node0";
+            treeNode116.Text = "Nenitescu Razvan";
+            treeNode117.BackColor = System.Drawing.Color.SeaGreen;
+            treeNode117.ForeColor = System.Drawing.Color.White;
+            treeNode117.Name = "Node25";
+            treeNode117.Text = "Brasov";
+            treeNode118.BackColor = System.Drawing.Color.SeaGreen;
+            treeNode118.ForeColor = System.Drawing.Color.White;
+            treeNode118.Name = "Node26";
+            treeNode118.Text = "Covasna";
+            treeNode119.BackColor = System.Drawing.Color.SeaGreen;
+            treeNode119.ForeColor = System.Drawing.Color.White;
+            treeNode119.Name = "Node27";
+            treeNode119.Text = "Harghita";
+            treeNode120.BackColor = System.Drawing.Color.SeaGreen;
+            treeNode120.ForeColor = System.Drawing.Color.White;
+            treeNode120.Name = "Node28";
+            treeNode120.Text = "Mures";
+            treeNode121.BackColor = System.Drawing.Color.SeaGreen;
+            treeNode121.ForeColor = System.Drawing.Color.White;
+            treeNode121.Name = "Node29";
+            treeNode121.Text = "Sibiu";
+            treeNode122.BackColor = System.Drawing.Color.SeaGreen;
+            treeNode122.ForeColor = System.Drawing.Color.White;
+            treeNode122.Name = "Node30";
+            treeNode122.Text = "Alba";
+            treeNode123.BackColor = System.Drawing.Color.SeaGreen;
+            treeNode123.ForeColor = System.Drawing.Color.White;
+            treeNode123.Name = "Node31";
+            treeNode123.Text = "Deva";
+            treeNode124.BackColor = System.Drawing.Color.SeaGreen;
+            treeNode124.ForeColor = System.Drawing.Color.White;
+            treeNode124.Name = "Node32";
+            treeNode124.Text = "Cluj";
+            treeNode125.BackColor = System.Drawing.Color.SeaGreen;
+            treeNode125.ForeColor = System.Drawing.Color.White;
+            treeNode125.Name = "Node34";
+            treeNode125.Text = "Bistrita-Nasaud";
             treeNode126.BackColor = System.Drawing.Color.SeaGreen;
             treeNode126.ForeColor = System.Drawing.Color.White;
-            treeNode126.Name = "Node24";
-            treeNode126.Text = "Transilvania";
-            treeNode127.Name = "Node37";
-            treeNode127.Text = "Maramures";
-            treeNode128.Name = "Node38";
-            treeNode128.Text = "Satu-Mare";
+            treeNode126.Name = "Node35";
+            treeNode126.Text = "Salaj";
+            treeNode127.BackColor = System.Drawing.Color.SeaGreen;
+            treeNode127.ForeColor = System.Drawing.Color.White;
+            treeNode127.Name = "Node24";
+            treeNode127.Text = "Transilvania";
+            treeNode128.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            treeNode128.ForeColor = System.Drawing.Color.Black;
+            treeNode128.Name = "Node37";
+            treeNode128.Text = "Maramures";
             treeNode129.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             treeNode129.ForeColor = System.Drawing.Color.Black;
-            treeNode129.Name = "Node36";
-            treeNode129.Text = "Maramures";
-            treeNode130.Name = "Node42";
-            treeNode130.Text = "Bihor";
-            treeNode131.Name = "Node43";
-            treeNode131.Text = "Arad";
+            treeNode129.Name = "Node38";
+            treeNode129.Text = "Satu-Mare";
+            treeNode130.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            treeNode130.Name = "Node3";
+            treeNode130.Text = "Ionescu Vlad";
+            treeNode131.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            treeNode131.ForeColor = System.Drawing.Color.Black;
+            treeNode131.Name = "Node36";
+            treeNode131.Text = "Maramures";
             treeNode132.BackColor = System.Drawing.Color.LimeGreen;
             treeNode132.ForeColor = System.Drawing.Color.White;
-            treeNode132.Name = "Node39";
-            treeNode132.Text = "Crisana";
-            treeNode133.Name = "Node44";
-            treeNode133.Text = "Timis";
-            treeNode134.Name = "Node45";
-            treeNode134.Text = "Caras-Severin";
-            treeNode135.BackColor = System.Drawing.Color.DarkSeaGreen;
+            treeNode132.Name = "Node42";
+            treeNode132.Text = "Bihor";
+            treeNode133.BackColor = System.Drawing.Color.LimeGreen;
+            treeNode133.ForeColor = System.Drawing.Color.White;
+            treeNode133.Name = "Node43";
+            treeNode133.Text = "Arad";
+            treeNode134.ForeColor = System.Drawing.Color.LimeGreen;
+            treeNode134.Name = "Node4";
+            treeNode134.Text = "Georgescu Simona";
+            treeNode135.BackColor = System.Drawing.Color.LimeGreen;
             treeNode135.ForeColor = System.Drawing.Color.White;
-            treeNode135.Name = "Node40";
-            treeNode135.Text = "Banat";
-            treeNode136.Name = "Node46";
-            treeNode136.Text = "Mehedinti";
-            treeNode137.Name = "Node47";
-            treeNode137.Text = "Dolj";
-            treeNode138.Name = "Node48";
-            treeNode138.Text = "Gorj";
-            treeNode139.Name = "Node49";
-            treeNode139.Text = "Valcea";
+            treeNode135.Name = "Node39";
+            treeNode135.Text = "Crisana";
+            treeNode136.BackColor = System.Drawing.Color.DarkSeaGreen;
+            treeNode136.ForeColor = System.Drawing.Color.White;
+            treeNode136.Name = "Node44";
+            treeNode136.Text = "Timis";
+            treeNode137.BackColor = System.Drawing.Color.DarkSeaGreen;
+            treeNode137.ForeColor = System.Drawing.Color.White;
+            treeNode137.Name = "Node45";
+            treeNode137.Text = "Caras-Severin";
+            treeNode138.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            treeNode138.Name = "Node5";
+            treeNode138.Text = "Nastase Rodica";
+            treeNode139.BackColor = System.Drawing.Color.DarkSeaGreen;
+            treeNode139.ForeColor = System.Drawing.Color.White;
+            treeNode139.Name = "Node40";
+            treeNode139.Text = "Banat";
             treeNode140.BackColor = System.Drawing.Color.Yellow;
             treeNode140.ForeColor = System.Drawing.Color.Black;
-            treeNode140.Name = "Node41";
-            treeNode140.Text = "Oltenia";
-            treeNode141.Name = "Node0";
-            treeNode141.Text = "Regiunile Romaniei";
+            treeNode140.Name = "Node46";
+            treeNode140.Text = "Mehedinti";
+            treeNode141.BackColor = System.Drawing.Color.Yellow;
+            treeNode141.ForeColor = System.Drawing.Color.Black;
+            treeNode141.Name = "Node47";
+            treeNode141.Text = "Dolj";
+            treeNode142.BackColor = System.Drawing.Color.Yellow;
+            treeNode142.ForeColor = System.Drawing.Color.Black;
+            treeNode142.Name = "Node48";
+            treeNode142.Text = "Gorj";
+            treeNode143.BackColor = System.Drawing.Color.Yellow;
+            treeNode143.ForeColor = System.Drawing.Color.Black;
+            treeNode143.Name = "Node49";
+            treeNode143.Text = "Valcea";
+            treeNode144.ForeColor = System.Drawing.Color.Yellow;
+            treeNode144.Name = "Node6";
+            treeNode144.Text = "Minulescu Constantin";
+            treeNode145.BackColor = System.Drawing.Color.Yellow;
+            treeNode145.ForeColor = System.Drawing.Color.Black;
+            treeNode145.Name = "Node41";
+            treeNode145.Text = "Oltenia";
+            treeNode146.Name = "Node0";
+            treeNode146.Text = "Regiunile Romaniei";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode141});
-            this.treeView1.Size = new System.Drawing.Size(453, 484);
+            treeNode146});
+            this.treeView1.Size = new System.Drawing.Size(453, 482);
             this.treeView1.TabIndex = 1;
             // 
             // guna2GroupBox1
@@ -716,7 +782,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.SkyBlue;
-            this.guna2Panel1.Controls.Add(this.guna2Panel2);
+            this.guna2Panel1.Controls.Add(this.gunaaBtnSalvareInXML);
             this.guna2Panel1.Controls.Add(this.guna2GroupBox1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Location = new System.Drawing.Point(25, 46);
@@ -724,41 +790,6 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(1200, 738);
             this.guna2Panel1.TabIndex = 3;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.gunaBtnPopulareTreeView);
-            this.guna2Panel2.Controls.Add(this.gunaaBtnSalvareInXML);
-            this.guna2Panel2.Location = new System.Drawing.Point(192, 616);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(834, 100);
-            this.guna2Panel2.TabIndex = 13;
-            // 
-            // gunaBtnPopulareTreeView
-            // 
-            this.gunaBtnPopulareTreeView.Animated = true;
-            this.gunaBtnPopulareTreeView.AutoRoundedCorners = true;
-            this.gunaBtnPopulareTreeView.BorderColor = System.Drawing.Color.Navy;
-            this.gunaBtnPopulareTreeView.BorderRadius = 32;
-            this.gunaBtnPopulareTreeView.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.gunaBtnPopulareTreeView.BorderThickness = 2;
-            this.gunaBtnPopulareTreeView.CheckedState.Parent = this.gunaBtnPopulareTreeView;
-            this.gunaBtnPopulareTreeView.CustomImages.Parent = this.gunaBtnPopulareTreeView;
-            this.gunaBtnPopulareTreeView.FillColor = System.Drawing.Color.Blue;
-            this.gunaBtnPopulareTreeView.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaBtnPopulareTreeView.ForeColor = System.Drawing.Color.Black;
-            this.gunaBtnPopulareTreeView.HoverState.Parent = this.gunaBtnPopulareTreeView;
-            this.gunaBtnPopulareTreeView.Image = global::Proiect_PAW.Properties.Resources.edit;
-            this.gunaBtnPopulareTreeView.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gunaBtnPopulareTreeView.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaBtnPopulareTreeView.Location = new System.Drawing.Point(505, 16);
-            this.gunaBtnPopulareTreeView.Name = "gunaBtnPopulareTreeView";
-            this.gunaBtnPopulareTreeView.ShadowDecoration.Parent = this.gunaBtnPopulareTreeView;
-            this.gunaBtnPopulareTreeView.Size = new System.Drawing.Size(260, 67);
-            this.gunaBtnPopulareTreeView.TabIndex = 1;
-            this.gunaBtnPopulareTreeView.Text = "Actualizează Persoană";
-            this.gunaBtnPopulareTreeView.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // gunaaBtnSalvareInXML
             // 
@@ -777,7 +808,7 @@
             this.gunaaBtnSalvareInXML.Image = global::Proiect_PAW.Properties.Resources.xml;
             this.gunaaBtnSalvareInXML.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.gunaaBtnSalvareInXML.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaaBtnSalvareInXML.Location = new System.Drawing.Point(97, 16);
+            this.gunaaBtnSalvareInXML.Location = new System.Drawing.Point(440, 635);
             this.gunaaBtnSalvareInXML.Name = "gunaaBtnSalvareInXML";
             this.gunaaBtnSalvareInXML.ShadowDecoration.Parent = this.gunaaBtnSalvareInXML;
             this.gunaaBtnSalvareInXML.Size = new System.Drawing.Size(260, 67);
@@ -873,7 +904,6 @@
             this.Load += new System.EventHandler(this.FormRegiuni_Recenzor_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -893,8 +923,6 @@
         private System.Windows.Forms.Label labelBara;
         private Guna.UI2.WinForms.Guna2ImageButton gunaImgBtnX;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Button gunaBtnPopulareTreeView;
         private Guna.UI2.WinForms.Guna2Button gunaaBtnSalvareInXML;
     }
 }

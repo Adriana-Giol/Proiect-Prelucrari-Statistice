@@ -14,6 +14,7 @@ namespace Proiect_PAW.Forms
     public partial class FormAdd_Recenzor : Form
     {
         public object gunagdvRecenzori { get; private set; }
+        List<Recenzor> listaRecenzori = new List<Recenzor>();
 
 
         public FormAdd_Recenzor()
@@ -181,6 +182,17 @@ namespace Proiect_PAW.Forms
 
         }
 
+        //DIRECTOR
+        private void guna2TbDirector_TextChanged(object sender, EventArgs e)
+        {
+           if(guna2TbDirector.Text == "")
+            {
+                errorProvider1.SetError(guna2TbDirector, "Alocati directorul regional!");
+                guna2ImageCkDirector.Checked = false;
+            }
+
+        }
+
         //REGIUNE
         private void gunaCbRegiune_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -337,6 +349,8 @@ namespace Proiect_PAW.Forms
             }
         }
 
+       
+
         private void gunaBtnSalvare_Click(object sender, EventArgs e)
         {
 
@@ -348,7 +362,7 @@ namespace Proiect_PAW.Forms
 
                     string numeComplet = gunaTbNume.Text;
                     string codRecenzor = gunaTbCodRecenzor.Text;
-                    DateTime dataNasterii = Convert.ToDateTime(guna2DateTimePicker1.Text);
+                    System.DateTime dataNasterii = Convert.ToDateTime(guna2DateTimePicker1.Text);
                     string sex = string.Empty;
                     if (guna2ImageRadioButtonFeminin.Checked)
                         sex = "Feminin";
@@ -357,10 +371,14 @@ namespace Proiect_PAW.Forms
                     string regiuneRecenzata = gunaCbRegiune.Text;
                     string judetRecenzat = gunaCbJudet.Text;
                     string localitateRecenzata = gunaTbLocalitate.Text;
+                    string directorRegional = guna2TbDirector.Text;
 
-                    Recenzor recenzor = new Recenzor(codRecenzor, numeComplet, dataNasterii, sex, regiuneRecenzata, judetRecenzat, localitateRecenzata);
+                    Recenzor recenzor = new Recenzor(codRecenzor, numeComplet, dataNasterii, sex, regiuneRecenzata, judetRecenzat, localitateRecenzata, directorRegional);
                     MessageBox.Show(recenzor.ToString());
-
+                    listaRecenzori.Add(recenzor);
+                    UC_PanouRecenzori UC = new UC_PanouRecenzori(listaRecenzori);
+                    this.Close();
+                    
                  
                 }
 
@@ -387,5 +405,16 @@ namespace Proiect_PAW.Forms
             
             
         }
+
+        private void guna2BtnImportDirector_Click(object sender, EventArgs e)
+        {
+             if (gunaCbRegiune.SelectedIndex == 0)
+            {
+              
+            }
+        }
+
+
+   
     }
 }

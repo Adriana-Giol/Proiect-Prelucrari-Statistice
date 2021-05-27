@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Proiect_PAW.Forms;
+using Proiect_PAW.Classes;
 
 namespace Proiect_PAW
 {
@@ -15,16 +16,20 @@ namespace Proiect_PAW
     {
         DataTable dt = new DataTable();
         FormAdd_Recenzor formAdd_Recenzor = new FormAdd_Recenzor();
+        List<Recenzor> listaRecenzori2 = new List<Recenzor>();
 
 
+        public UC_PanouRecenzori(List<Recenzor> listaRecenzori)
+        {
+            InitializeComponent();
+            listaRecenzori2 = listaRecenzori;
+            
+        }
 
         public UC_PanouRecenzori()
         {
             InitializeComponent();
-            //listaRecenzoriForm2 = listaRecenzori;
-            
         }
-
 
         private void previzualizareToolStripMenuItem_Click(object sender, EventArgs e)
         {/*
@@ -40,30 +45,11 @@ namespace Proiect_PAW
 
         private void gunaaBtnAdauga_Click(object sender, EventArgs e)
         {
-            
+
             Forms.FormAdd_Recenzor r = new Forms.FormAdd_Recenzor();
             r.ShowDialog();
 
         }
-
-        private void gunaBtnSterge_Click(object sender, EventArgs e)
-        {
-            foreach (DataGridViewCell recenzor in gunagdvRecenzori.SelectedCells)
-                if (recenzor.Selected)
-                {
-                    gunagdvRecenzori.Rows.RemoveAt(recenzor.RowIndex);
-                }
-        }
-
-        private void stergeRecenzorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            foreach (DataGridViewCell recenzor in gunagdvRecenzori.SelectedCells)
-                if (recenzor.Selected)
-                {
-                    gunagdvRecenzori.Rows.RemoveAt(recenzor.RowIndex);
-                }
-        }
-
        
 
         private void gunaImgBtnLocuinta_Click(object sender, EventArgs e)
@@ -97,19 +83,19 @@ namespace Proiect_PAW
         
         }
 
-        private void UC_PanouRecenzori_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void importDateToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void afisarePersoaneToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            foreach(Recenzor recenzor in listaRecenzori2)
+            {
+                ListViewItem item = new ListViewItem(recenzor.NumeComplet);
+                item.SubItems.Add(recenzor.CodRecenzor);
+                item.SubItems.Add(recenzor.DataNasterii.ToString());
+                item.SubItems.Add(recenzor.Sex);
+                item.SubItems.Add(recenzor.RegiuneRecenzata);
+                item.SubItems.Add(recenzor.JudetRecenzat);
+                item.SubItems.Add(recenzor.LocalitateRecenzata);
+                item.SubItems.Add(recenzor.DirectorRegional);
+            }
         }
     }
 }

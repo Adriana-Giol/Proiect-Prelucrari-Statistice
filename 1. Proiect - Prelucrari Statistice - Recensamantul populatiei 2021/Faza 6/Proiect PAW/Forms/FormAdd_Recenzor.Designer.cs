@@ -42,6 +42,10 @@
             this.fisierTextToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.fisierXMLToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.guna2ImageCkDirector = new Guna.UI2.WinForms.Guna2ImageCheckBox();
+            this.guna2BtnImportDirector = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2TbDirector = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelDirector = new System.Windows.Forms.Label();
             this.gunaCbRegiune = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaCkImgRegiune = new Guna.UI2.WinForms.Guna2ImageCheckBox();
             this.gunaimgCkJudet = new Guna.UI2.WinForms.Guna2ImageCheckBox();
@@ -204,6 +208,10 @@
             this.guna2GroupBox2.BorderRadius = 20;
             this.guna2GroupBox2.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.guna2GroupBox2.BorderThickness = 4;
+            this.guna2GroupBox2.Controls.Add(this.guna2ImageCkDirector);
+            this.guna2GroupBox2.Controls.Add(this.guna2BtnImportDirector);
+            this.guna2GroupBox2.Controls.Add(this.guna2TbDirector);
+            this.guna2GroupBox2.Controls.Add(this.labelDirector);
             this.guna2GroupBox2.Controls.Add(this.gunaCbRegiune);
             this.guna2GroupBox2.Controls.Add(this.gunaCkImgRegiune);
             this.guna2GroupBox2.Controls.Add(this.gunaimgCkJudet);
@@ -227,6 +235,87 @@
             this.guna2GroupBox2.Text = "II. Date Zonă Recenzată";
             this.guna2GroupBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.guna2GroupBox2.UseTransparentBackground = true;
+            // 
+            // guna2ImageCkDirector
+            // 
+            this.guna2ImageCkDirector.CheckedState.Image = global::Proiect_PAW.Properties.Resources._checked;
+            this.guna2ImageCkDirector.CheckedState.Parent = this.guna2ImageCkDirector;
+            this.guna2ImageCkDirector.HoverState.Parent = this.guna2ImageCkDirector;
+            this.guna2ImageCkDirector.Image = global::Proiect_PAW.Properties.Resources.Picture2;
+            this.guna2ImageCkDirector.IndicateFocus = false;
+            this.guna2ImageCkDirector.Location = new System.Drawing.Point(280, 318);
+            this.guna2ImageCkDirector.Name = "guna2ImageCkDirector";
+            this.guna2ImageCkDirector.PressedState.Parent = this.guna2ImageCkDirector;
+            this.guna2ImageCkDirector.Size = new System.Drawing.Size(36, 38);
+            this.guna2ImageCkDirector.TabIndex = 45;
+            // 
+            // guna2BtnImportDirector
+            // 
+            this.guna2BtnImportDirector.Animated = true;
+            this.guna2BtnImportDirector.AutoRoundedCorners = true;
+            this.guna2BtnImportDirector.BackColor = System.Drawing.Color.Transparent;
+            this.guna2BtnImportDirector.BorderColor = System.Drawing.Color.Navy;
+            this.guna2BtnImportDirector.BorderRadius = 24;
+            this.guna2BtnImportDirector.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.guna2BtnImportDirector.BorderThickness = 2;
+            this.guna2BtnImportDirector.CheckedState.Parent = this.guna2BtnImportDirector;
+            this.guna2BtnImportDirector.CustomImages.Parent = this.guna2BtnImportDirector;
+            this.guna2BtnImportDirector.FillColor = System.Drawing.Color.Blue;
+            this.guna2BtnImportDirector.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.guna2BtnImportDirector.ForeColor = System.Drawing.Color.Black;
+            this.guna2BtnImportDirector.HoverState.Parent = this.guna2BtnImportDirector;
+            this.guna2BtnImportDirector.Image = global::Proiect_PAW.Properties.Resources.xml;
+            this.guna2BtnImportDirector.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2BtnImportDirector.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2BtnImportDirector.Location = new System.Drawing.Point(27, 381);
+            this.guna2BtnImportDirector.Name = "guna2BtnImportDirector";
+            this.guna2BtnImportDirector.ShadowDecoration.Parent = this.guna2BtnImportDirector;
+            this.guna2BtnImportDirector.Size = new System.Drawing.Size(258, 50);
+            this.guna2BtnImportDirector.TabIndex = 44;
+            this.guna2BtnImportDirector.Text = "Alocare Director";
+            this.guna2BtnImportDirector.UseTransparentBackground = true;
+            this.guna2BtnImportDirector.Click += new System.EventHandler(this.guna2BtnImportDirector_Click);
+            // 
+            // guna2TbDirector
+            // 
+            this.guna2TbDirector.Animated = true;
+            this.guna2TbDirector.AutoRoundedCorners = true;
+            this.guna2TbDirector.BorderColor = System.Drawing.Color.Blue;
+            this.guna2TbDirector.BorderRadius = 19;
+            this.guna2TbDirector.BorderThickness = 2;
+            this.guna2TbDirector.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TbDirector.DefaultText = "";
+            this.guna2TbDirector.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TbDirector.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TbDirector.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TbDirector.DisabledState.Parent = this.guna2TbDirector;
+            this.guna2TbDirector.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TbDirector.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TbDirector.FocusedState.Parent = this.guna2TbDirector;
+            this.guna2TbDirector.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.guna2TbDirector.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TbDirector.HoverState.Parent = this.guna2TbDirector;
+            this.guna2TbDirector.Location = new System.Drawing.Point(27, 318);
+            this.guna2TbDirector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.guna2TbDirector.Name = "guna2TbDirector";
+            this.guna2TbDirector.PasswordChar = '\0';
+            this.guna2TbDirector.PlaceholderText = "Director Regional";
+            this.guna2TbDirector.SelectedText = "";
+            this.guna2TbDirector.ShadowDecoration.Parent = this.guna2TbDirector;
+            this.guna2TbDirector.Size = new System.Drawing.Size(250, 40);
+            this.guna2TbDirector.TabIndex = 43;
+            this.guna2TbDirector.TextChanged += new System.EventHandler(this.guna2TbDirector_TextChanged);
+            // 
+            // labelDirector
+            // 
+            this.labelDirector.AutoSize = true;
+            this.labelDirector.BackColor = System.Drawing.Color.Transparent;
+            this.labelDirector.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDirector.Location = new System.Drawing.Point(35, 296);
+            this.labelDirector.Name = "labelDirector";
+            this.labelDirector.Size = new System.Drawing.Size(134, 19);
+            this.labelDirector.TabIndex = 42;
+            this.labelDirector.Text = "4. Director Regional";
             // 
             // gunaCbRegiune
             // 
@@ -865,5 +954,9 @@
         private Guna.UI2.WinForms.Guna2ComboBox gunaCbRegiune;
         private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButtonMasculin;
         private Guna.UI2.WinForms.Guna2ImageRadioButton guna2ImageRadioButtonFeminin;
+        private Guna.UI2.WinForms.Guna2Button guna2BtnImportDirector;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TbDirector;
+        private System.Windows.Forms.Label labelDirector;
+        private Guna.UI2.WinForms.Guna2ImageCheckBox guna2ImageCkDirector;
     }
 }

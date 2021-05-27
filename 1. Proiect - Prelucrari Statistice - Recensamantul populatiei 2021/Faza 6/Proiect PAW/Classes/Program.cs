@@ -16,7 +16,7 @@ namespace Proiect_PAW
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDashboard());
+            Application.Run(new FormSplashScreen());
         }
     }
 }

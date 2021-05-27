@@ -12,6 +12,7 @@ namespace Proiect_PAW.Classes
         private string regiuneRecenzata;
         private string judetRecenzat;
         private string localitateRecenzata;
+        private string directorRegional;
 
 
 
@@ -22,17 +23,19 @@ namespace Proiect_PAW.Classes
             this.regiuneRecenzata = " ";
             this.localitateRecenzata = " ";
             this.judetRecenzat = " ";
+            this.directorRegional = " ";
 
 
         }
 
-        public Recenzor(string codRecenzor, string numeComplet, DateTime dataNasterii, string sex, string regiuneRecenzata, string judetRecenzat, string localitateRecenzata)
+        public Recenzor(string codRecenzor, string numeComplet, DateTime dataNasterii, string sex, string regiuneRecenzata, string judetRecenzat, string localitateRecenzata, string directorRegional)
                 : base(numeComplet, dataNasterii, sex)
         {
             this.codRecenzor = codRecenzor;
             this.regiuneRecenzata = regiuneRecenzata;
             this.judetRecenzat = judetRecenzat;
             this.localitateRecenzata = localitateRecenzata;
+            this.directorRegional = directorRegional;
         }
 
 
@@ -41,6 +44,7 @@ namespace Proiect_PAW.Classes
         public string RegiuneRecenzata { get => regiuneRecenzata; set => regiuneRecenzata = value; }
         public string JudetRecenzat { get => judetRecenzat; set => judetRecenzat = value; }
         public string LocalitateRecenzata { get => localitateRecenzata; set => localitateRecenzata = value; }
+        public string DirectorRegional { get => directorRegional; set => directorRegional = value; }
 
 
 

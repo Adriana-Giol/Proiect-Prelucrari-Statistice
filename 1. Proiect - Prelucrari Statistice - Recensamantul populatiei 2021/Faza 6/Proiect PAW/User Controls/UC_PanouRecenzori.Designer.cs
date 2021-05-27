@@ -29,30 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
+            "Giol Adriana",
+            "5441",
+            "05/05/1998",
+            "Feminin",
+            "Muntenia",
+            "Braila",
+            "Braila",
+            "Popescu Ana"}, -1);
             this.labelTitlu = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.gunagdvRecenzori = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.ColNume = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColCod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColDataNasterii = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColSex = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColRegiune = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColJudet = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColLocalitate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-            this.stergeRecenzorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gunaImgBtnLocuinta = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.gunaImgBtnDashboard = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.gunaBtnSterge = new Guna.UI2.WinForms.Guna2Button();
-            this.gunaBtnActualizare = new Guna.UI2.WinForms.Guna2Button();
-            this.gunaaBtnAdauga = new Guna.UI2.WinForms.Guna2Button();
-            this.gunaTbCauta = new Guna.UI2.WinForms.Guna2TextBox();
+            this.afisarePersoaneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salvareFisierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fisierTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fisierXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,11 +50,29 @@
             this.importDateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fisierTextToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.fisierXMLToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.afisarePersoaneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.gunaBtnSterge = new Guna.UI2.WinForms.Guna2Button();
+            this.gunaBtnActualizare = new Guna.UI2.WinForms.Guna2Button();
+            this.gunaaBtnAdauga = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.listViewRecenzor = new System.Windows.Forms.ListView();
+            this.colNume = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colCod = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colSex = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colRegiune = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colJudet = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colLocalitate = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colDirector = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.stergeRecenzorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gunaImgBtnLocuinta = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.gunaImgBtnDashboard = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.gunaTbCauta = new Guna.UI2.WinForms.Guna2TextBox();
+            this.colData = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunagdvRecenzori)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,318 +102,14 @@
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // guna2Panel1
+            // afisarePersoaneToolStripMenuItem
             // 
-            this.guna2Panel1.Controls.Add(this.gunaBtnSterge);
-            this.guna2Panel1.Controls.Add(this.gunaBtnActualizare);
-            this.guna2Panel1.Controls.Add(this.gunaaBtnAdauga);
-            this.guna2Panel1.Location = new System.Drawing.Point(40, 486);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(834, 100);
-            this.guna2Panel1.TabIndex = 12;
-            // 
-            // guna2ShadowPanel1
-            // 
-            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Controls.Add(this.gunagdvRecenzori);
-            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.Blue;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(43, 192);
-            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            this.guna2ShadowPanel1.Padding = new System.Windows.Forms.Padding(10);
-            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(841, 259);
-            this.guna2ShadowPanel1.TabIndex = 13;
-            // 
-            // gunagdvRecenzori
-            // 
-            this.gunagdvRecenzori.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.gunagdvRecenzori.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.gunagdvRecenzori.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gunagdvRecenzori.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.gunagdvRecenzori.BackgroundColor = System.Drawing.Color.SkyBlue;
-            this.gunagdvRecenzori.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunagdvRecenzori.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunagdvRecenzori.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.OrangeRed;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunagdvRecenzori.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.gunagdvRecenzori.ColumnHeadersHeight = 52;
-            this.gunagdvRecenzori.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColNume,
-            this.ColCod,
-            this.ColDataNasterii,
-            this.ColSex,
-            this.ColRegiune,
-            this.ColJudet,
-            this.ColLocalitate});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunagdvRecenzori.DefaultCellStyle = dataGridViewCellStyle6;
-            this.gunagdvRecenzori.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunagdvRecenzori.EnableHeadersVisualStyles = false;
-            this.gunagdvRecenzori.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
-            this.gunagdvRecenzori.Location = new System.Drawing.Point(10, 10);
-            this.gunagdvRecenzori.Name = "gunagdvRecenzori";
-            this.gunagdvRecenzori.RowHeadersVisible = false;
-            this.gunagdvRecenzori.RowHeadersWidth = 51;
-            this.gunagdvRecenzori.RowTemplate.Height = 24;
-            this.gunagdvRecenzori.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.gunagdvRecenzori.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunagdvRecenzori.Size = new System.Drawing.Size(821, 239);
-            this.gunagdvRecenzori.TabIndex = 1;
-            this.gunagdvRecenzori.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
-            this.gunagdvRecenzori.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.gunagdvRecenzori.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gunagdvRecenzori.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gunagdvRecenzori.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gunagdvRecenzori.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gunagdvRecenzori.ThemeStyle.BackColor = System.Drawing.Color.SkyBlue;
-            this.gunagdvRecenzori.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
-            this.gunagdvRecenzori.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-            this.gunagdvRecenzori.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.gunagdvRecenzori.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunagdvRecenzori.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gunagdvRecenzori.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gunagdvRecenzori.ThemeStyle.HeaderStyle.Height = 52;
-            this.gunagdvRecenzori.ThemeStyle.ReadOnly = false;
-            this.gunagdvRecenzori.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            this.gunagdvRecenzori.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunagdvRecenzori.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunagdvRecenzori.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.gunagdvRecenzori.ThemeStyle.RowsStyle.Height = 24;
-            this.gunagdvRecenzori.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
-            this.gunagdvRecenzori.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // ColNume
-            // 
-            this.ColNume.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColNume.HeaderText = "Nume Prenume";
-            this.ColNume.MinimumWidth = 6;
-            this.ColNume.Name = "ColNume";
-            // 
-            // ColCod
-            // 
-            this.ColCod.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColCod.HeaderText = "Cod Recenzor";
-            this.ColCod.MinimumWidth = 6;
-            this.ColCod.Name = "ColCod";
-            // 
-            // ColDataNasterii
-            // 
-            this.ColDataNasterii.HeaderText = "Data Nasterii";
-            this.ColDataNasterii.MinimumWidth = 6;
-            this.ColDataNasterii.Name = "ColDataNasterii";
-            // 
-            // ColSex
-            // 
-            this.ColSex.HeaderText = "Sex";
-            this.ColSex.MinimumWidth = 6;
-            this.ColSex.Name = "ColSex";
-            this.ColSex.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ColSex.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColRegiune
-            // 
-            this.ColRegiune.HeaderText = "Regiune";
-            this.ColRegiune.MinimumWidth = 6;
-            this.ColRegiune.Name = "ColRegiune";
-            // 
-            // ColJudet
-            // 
-            this.ColJudet.HeaderText = "Judet";
-            this.ColJudet.MinimumWidth = 6;
-            this.ColJudet.Name = "ColJudet";
-            // 
-            // ColLocalitate
-            // 
-            this.ColLocalitate.HeaderText = "Localitate";
-            this.ColLocalitate.MinimumWidth = 6;
-            this.ColLocalitate.Name = "ColLocalitate";
-            // 
-            // guna2ContextMenuStrip1
-            // 
-            this.guna2ContextMenuStrip1.BackColor = System.Drawing.Color.Blue;
-            this.guna2ContextMenuStrip1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.stergeRecenzorToolStripMenuItem});
-            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
-            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
-            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(190, 28);
-            // 
-            // stergeRecenzorToolStripMenuItem
-            // 
-            this.stergeRecenzorToolStripMenuItem.Name = "stergeRecenzorToolStripMenuItem";
-            this.stergeRecenzorToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
-            this.stergeRecenzorToolStripMenuItem.Text = "Sterge Recenzor";
-            this.stergeRecenzorToolStripMenuItem.Click += new System.EventHandler(this.stergeRecenzorToolStripMenuItem_Click);
-            // 
-            // gunaImgBtnLocuinta
-            // 
-            this.gunaImgBtnLocuinta.BackColor = System.Drawing.Color.Transparent;
-            this.gunaImgBtnLocuinta.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImgBtnLocuinta.CheckedState.Parent = this.gunaImgBtnLocuinta;
-            this.gunaImgBtnLocuinta.HoverState.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaImgBtnLocuinta.HoverState.Parent = this.gunaImgBtnLocuinta;
-            this.gunaImgBtnLocuinta.Image = global::Proiect_PAW.Properties.Resources.romania__1_;
-            this.gunaImgBtnLocuinta.ImageRotate = 0F;
-            this.gunaImgBtnLocuinta.ImageSize = new System.Drawing.Size(40, 40);
-            this.gunaImgBtnLocuinta.Location = new System.Drawing.Point(849, 0);
-            this.gunaImgBtnLocuinta.Name = "gunaImgBtnLocuinta";
-            this.gunaImgBtnLocuinta.PressedState.ImageSize = new System.Drawing.Size(40, 35);
-            this.gunaImgBtnLocuinta.PressedState.Parent = this.gunaImgBtnLocuinta;
-            this.gunaImgBtnLocuinta.Size = new System.Drawing.Size(81, 44);
-            this.gunaImgBtnLocuinta.TabIndex = 15;
-            this.gunaImgBtnLocuinta.UseTransparentBackground = true;
-            this.gunaImgBtnLocuinta.Click += new System.EventHandler(this.gunaImgBtnLocuinta_Click);
-            // 
-            // gunaImgBtnDashboard
-            // 
-            this.gunaImgBtnDashboard.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImgBtnDashboard.CheckedState.Parent = this.gunaImgBtnDashboard;
-            this.gunaImgBtnDashboard.HoverState.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaImgBtnDashboard.HoverState.Parent = this.gunaImgBtnDashboard;
-            this.gunaImgBtnDashboard.Image = global::Proiect_PAW.Properties.Resources.arrow21;
-            this.gunaImgBtnDashboard.ImageRotate = 0F;
-            this.gunaImgBtnDashboard.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaImgBtnDashboard.Location = new System.Drawing.Point(3, 47);
-            this.gunaImgBtnDashboard.Name = "gunaImgBtnDashboard";
-            this.gunaImgBtnDashboard.PressedState.ImageSize = new System.Drawing.Size(30, 25);
-            this.gunaImgBtnDashboard.PressedState.Parent = this.gunaImgBtnDashboard;
-            this.gunaImgBtnDashboard.Size = new System.Drawing.Size(48, 33);
-            this.gunaImgBtnDashboard.TabIndex = 14;
-            this.gunaImgBtnDashboard.Click += new System.EventHandler(this.gunaImgBtnDashboard_Click);
-            // 
-            // gunaBtnSterge
-            // 
-            this.gunaBtnSterge.Animated = true;
-            this.gunaBtnSterge.AutoRoundedCorners = true;
-            this.gunaBtnSterge.BorderColor = System.Drawing.Color.Navy;
-            this.gunaBtnSterge.BorderRadius = 32;
-            this.gunaBtnSterge.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.gunaBtnSterge.BorderThickness = 2;
-            this.gunaBtnSterge.CheckedState.Parent = this.gunaBtnSterge;
-            this.gunaBtnSterge.CustomImages.Parent = this.gunaBtnSterge;
-            this.gunaBtnSterge.FillColor = System.Drawing.Color.Blue;
-            this.gunaBtnSterge.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaBtnSterge.ForeColor = System.Drawing.Color.White;
-            this.gunaBtnSterge.HoverState.Parent = this.gunaBtnSterge;
-            this.gunaBtnSterge.Image = global::Proiect_PAW.Properties.Resources.delete_user;
-            this.gunaBtnSterge.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gunaBtnSterge.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaBtnSterge.Location = new System.Drawing.Point(603, 16);
-            this.gunaBtnSterge.Name = "gunaBtnSterge";
-            this.gunaBtnSterge.ShadowDecoration.Parent = this.gunaBtnSterge;
-            this.gunaBtnSterge.Size = new System.Drawing.Size(197, 67);
-            this.gunaBtnSterge.TabIndex = 2;
-            this.gunaBtnSterge.Text = "Șterge Persoană";
-            this.gunaBtnSterge.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.gunaBtnSterge.Click += new System.EventHandler(this.gunaBtnSterge_Click);
-            // 
-            // gunaBtnActualizare
-            // 
-            this.gunaBtnActualizare.Animated = true;
-            this.gunaBtnActualizare.AutoRoundedCorners = true;
-            this.gunaBtnActualizare.BorderColor = System.Drawing.Color.Navy;
-            this.gunaBtnActualizare.BorderRadius = 32;
-            this.gunaBtnActualizare.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.gunaBtnActualizare.BorderThickness = 2;
-            this.gunaBtnActualizare.CheckedState.Parent = this.gunaBtnActualizare;
-            this.gunaBtnActualizare.CustomImages.Parent = this.gunaBtnActualizare;
-            this.gunaBtnActualizare.FillColor = System.Drawing.Color.Blue;
-            this.gunaBtnActualizare.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaBtnActualizare.ForeColor = System.Drawing.Color.White;
-            this.gunaBtnActualizare.HoverState.Parent = this.gunaBtnActualizare;
-            this.gunaBtnActualizare.Image = global::Proiect_PAW.Properties.Resources.edit;
-            this.gunaBtnActualizare.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gunaBtnActualizare.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaBtnActualizare.Location = new System.Drawing.Point(293, 16);
-            this.gunaBtnActualizare.Name = "gunaBtnActualizare";
-            this.gunaBtnActualizare.ShadowDecoration.Parent = this.gunaBtnActualizare;
-            this.gunaBtnActualizare.Size = new System.Drawing.Size(229, 67);
-            this.gunaBtnActualizare.TabIndex = 1;
-            this.gunaBtnActualizare.Text = "Actualizează Persoană";
-            this.gunaBtnActualizare.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // gunaaBtnAdauga
-            // 
-            this.gunaaBtnAdauga.Animated = true;
-            this.gunaaBtnAdauga.AutoRoundedCorners = true;
-            this.gunaaBtnAdauga.BorderColor = System.Drawing.Color.Navy;
-            this.gunaaBtnAdauga.BorderRadius = 32;
-            this.gunaaBtnAdauga.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.gunaaBtnAdauga.BorderThickness = 2;
-            this.gunaaBtnAdauga.CheckedState.Parent = this.gunaaBtnAdauga;
-            this.gunaaBtnAdauga.CustomImages.Parent = this.gunaaBtnAdauga;
-            this.gunaaBtnAdauga.FillColor = System.Drawing.Color.Blue;
-            this.gunaaBtnAdauga.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaaBtnAdauga.ForeColor = System.Drawing.Color.White;
-            this.gunaaBtnAdauga.HoverState.Parent = this.gunaaBtnAdauga;
-            this.gunaaBtnAdauga.Image = global::Proiect_PAW.Properties.Resources.add;
-            this.gunaaBtnAdauga.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.gunaaBtnAdauga.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaaBtnAdauga.Location = new System.Drawing.Point(3, 16);
-            this.gunaaBtnAdauga.Name = "gunaaBtnAdauga";
-            this.gunaaBtnAdauga.ShadowDecoration.Parent = this.gunaaBtnAdauga;
-            this.gunaaBtnAdauga.Size = new System.Drawing.Size(197, 67);
-            this.gunaaBtnAdauga.TabIndex = 0;
-            this.gunaaBtnAdauga.Text = "Adaugă Persoană";
-            this.gunaaBtnAdauga.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.gunaaBtnAdauga.Click += new System.EventHandler(this.gunaaBtnAdauga_Click);
-            // 
-            // gunaTbCauta
-            // 
-            this.gunaTbCauta.Animated = true;
-            this.gunaTbCauta.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.gunaTbCauta.AutoRoundedCorners = true;
-            this.gunaTbCauta.BorderColor = System.Drawing.Color.Blue;
-            this.gunaTbCauta.BorderRadius = 17;
-            this.gunaTbCauta.BorderThickness = 2;
-            this.gunaTbCauta.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTbCauta.DefaultText = "";
-            this.gunaTbCauta.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gunaTbCauta.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gunaTbCauta.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaTbCauta.DisabledState.Parent = this.gunaTbCauta;
-            this.gunaTbCauta.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaTbCauta.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaTbCauta.FocusedState.Parent = this.gunaTbCauta;
-            this.gunaTbCauta.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.gunaTbCauta.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaTbCauta.HoverState.Parent = this.gunaTbCauta;
-            this.gunaTbCauta.IconLeft = global::Proiect_PAW.Properties.Resources.loupe;
-            this.gunaTbCauta.IconLeftSize = new System.Drawing.Size(15, 15);
-            this.gunaTbCauta.Location = new System.Drawing.Point(289, 126);
-            this.gunaTbCauta.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gunaTbCauta.Name = "gunaTbCauta";
-            this.gunaTbCauta.PasswordChar = '\0';
-            this.gunaTbCauta.PlaceholderText = "Caută";
-            this.gunaTbCauta.SelectedText = "";
-            this.gunaTbCauta.ShadowDecoration.Parent = this.gunaTbCauta;
-            this.gunaTbCauta.Size = new System.Drawing.Size(310, 36);
-            this.gunaTbCauta.TabIndex = 9;
-            this.gunaTbCauta.TextChanged += new System.EventHandler(this.gunaTbCauta_TextChanged);
+            this.afisarePersoaneToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.afisarePersoaneToolStripMenuItem.Image = global::Proiect_PAW.Properties.Resources.list;
+            this.afisarePersoaneToolStripMenuItem.Name = "afisarePersoaneToolStripMenuItem";
+            this.afisarePersoaneToolStripMenuItem.Size = new System.Drawing.Size(176, 40);
+            this.afisarePersoaneToolStripMenuItem.Text = "Afisare Recenzori";
+            this.afisarePersoaneToolStripMenuItem.Click += new System.EventHandler(this.afisarePersoaneToolStripMenuItem_Click);
             // 
             // salvareFisierToolStripMenuItem
             // 
@@ -476,14 +178,13 @@
             this.importDateToolStripMenuItem.Name = "importDateToolStripMenuItem";
             this.importDateToolStripMenuItem.Size = new System.Drawing.Size(137, 40);
             this.importDateToolStripMenuItem.Text = "Import Date";
-            this.importDateToolStripMenuItem.Click += new System.EventHandler(this.importDateToolStripMenuItem_Click);
             // 
             // fisierTextToolStripMenuItem1
             // 
             this.fisierTextToolStripMenuItem1.BackColor = System.Drawing.Color.Blue;
             this.fisierTextToolStripMenuItem1.Image = global::Proiect_PAW.Properties.Resources.txt;
             this.fisierTextToolStripMenuItem1.Name = "fisierTextToolStripMenuItem1";
-            this.fisierTextToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
+            this.fisierTextToolStripMenuItem1.Size = new System.Drawing.Size(173, 28);
             this.fisierTextToolStripMenuItem1.Text = "Fisier Text";
             // 
             // fisierXMLToolStripMenuItem1
@@ -491,17 +192,275 @@
             this.fisierXMLToolStripMenuItem1.BackColor = System.Drawing.Color.Blue;
             this.fisierXMLToolStripMenuItem1.Image = global::Proiect_PAW.Properties.Resources.xml;
             this.fisierXMLToolStripMenuItem1.Name = "fisierXMLToolStripMenuItem1";
-            this.fisierXMLToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
+            this.fisierXMLToolStripMenuItem1.Size = new System.Drawing.Size(173, 28);
             this.fisierXMLToolStripMenuItem1.Text = "Fisier XML";
             // 
-            // afisarePersoaneToolStripMenuItem
+            // guna2Panel1
             // 
-            this.afisarePersoaneToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.afisarePersoaneToolStripMenuItem.Image = global::Proiect_PAW.Properties.Resources.list;
-            this.afisarePersoaneToolStripMenuItem.Name = "afisarePersoaneToolStripMenuItem";
-            this.afisarePersoaneToolStripMenuItem.Size = new System.Drawing.Size(176, 40);
-            this.afisarePersoaneToolStripMenuItem.Text = "Afisare Recenzori";
-            this.afisarePersoaneToolStripMenuItem.Click += new System.EventHandler(this.afisarePersoaneToolStripMenuItem_Click);
+            this.guna2Panel1.Controls.Add(this.gunaBtnSterge);
+            this.guna2Panel1.Controls.Add(this.gunaBtnActualizare);
+            this.guna2Panel1.Controls.Add(this.gunaaBtnAdauga);
+            this.guna2Panel1.Location = new System.Drawing.Point(50, 479);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(834, 100);
+            this.guna2Panel1.TabIndex = 12;
+            // 
+            // gunaBtnSterge
+            // 
+            this.gunaBtnSterge.Animated = true;
+            this.gunaBtnSterge.AutoRoundedCorners = true;
+            this.gunaBtnSterge.BorderColor = System.Drawing.Color.Navy;
+            this.gunaBtnSterge.BorderRadius = 32;
+            this.gunaBtnSterge.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.gunaBtnSterge.BorderThickness = 2;
+            this.gunaBtnSterge.CheckedState.Parent = this.gunaBtnSterge;
+            this.gunaBtnSterge.CustomImages.Parent = this.gunaBtnSterge;
+            this.gunaBtnSterge.FillColor = System.Drawing.Color.Blue;
+            this.gunaBtnSterge.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaBtnSterge.ForeColor = System.Drawing.Color.White;
+            this.gunaBtnSterge.HoverState.Parent = this.gunaBtnSterge;
+            this.gunaBtnSterge.Image = global::Proiect_PAW.Properties.Resources.delete_user;
+            this.gunaBtnSterge.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaBtnSterge.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaBtnSterge.Location = new System.Drawing.Point(603, 16);
+            this.gunaBtnSterge.Name = "gunaBtnSterge";
+            this.gunaBtnSterge.ShadowDecoration.Parent = this.gunaBtnSterge;
+            this.gunaBtnSterge.Size = new System.Drawing.Size(197, 67);
+            this.gunaBtnSterge.TabIndex = 2;
+            this.gunaBtnSterge.Text = "Șterge Persoană";
+            this.gunaBtnSterge.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // gunaBtnActualizare
+            // 
+            this.gunaBtnActualizare.Animated = true;
+            this.gunaBtnActualizare.AutoRoundedCorners = true;
+            this.gunaBtnActualizare.BorderColor = System.Drawing.Color.Navy;
+            this.gunaBtnActualizare.BorderRadius = 32;
+            this.gunaBtnActualizare.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.gunaBtnActualizare.BorderThickness = 2;
+            this.gunaBtnActualizare.CheckedState.Parent = this.gunaBtnActualizare;
+            this.gunaBtnActualizare.CustomImages.Parent = this.gunaBtnActualizare;
+            this.gunaBtnActualizare.FillColor = System.Drawing.Color.Blue;
+            this.gunaBtnActualizare.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaBtnActualizare.ForeColor = System.Drawing.Color.White;
+            this.gunaBtnActualizare.HoverState.Parent = this.gunaBtnActualizare;
+            this.gunaBtnActualizare.Image = global::Proiect_PAW.Properties.Resources.edit;
+            this.gunaBtnActualizare.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaBtnActualizare.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaBtnActualizare.Location = new System.Drawing.Point(305, 16);
+            this.gunaBtnActualizare.Name = "gunaBtnActualizare";
+            this.gunaBtnActualizare.ShadowDecoration.Parent = this.gunaBtnActualizare;
+            this.gunaBtnActualizare.Size = new System.Drawing.Size(229, 67);
+            this.gunaBtnActualizare.TabIndex = 1;
+            this.gunaBtnActualizare.Text = "Actualizează Persoană";
+            this.gunaBtnActualizare.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // gunaaBtnAdauga
+            // 
+            this.gunaaBtnAdauga.Animated = true;
+            this.gunaaBtnAdauga.AutoRoundedCorners = true;
+            this.gunaaBtnAdauga.BorderColor = System.Drawing.Color.Navy;
+            this.gunaaBtnAdauga.BorderRadius = 32;
+            this.gunaaBtnAdauga.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.gunaaBtnAdauga.BorderThickness = 2;
+            this.gunaaBtnAdauga.CheckedState.Parent = this.gunaaBtnAdauga;
+            this.gunaaBtnAdauga.CustomImages.Parent = this.gunaaBtnAdauga;
+            this.gunaaBtnAdauga.FillColor = System.Drawing.Color.Blue;
+            this.gunaaBtnAdauga.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaaBtnAdauga.ForeColor = System.Drawing.Color.White;
+            this.gunaaBtnAdauga.HoverState.Parent = this.gunaaBtnAdauga;
+            this.gunaaBtnAdauga.Image = global::Proiect_PAW.Properties.Resources.add;
+            this.gunaaBtnAdauga.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.gunaaBtnAdauga.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaaBtnAdauga.Location = new System.Drawing.Point(3, 16);
+            this.gunaaBtnAdauga.Name = "gunaaBtnAdauga";
+            this.gunaaBtnAdauga.ShadowDecoration.Parent = this.gunaaBtnAdauga;
+            this.gunaaBtnAdauga.Size = new System.Drawing.Size(197, 67);
+            this.gunaaBtnAdauga.TabIndex = 0;
+            this.gunaaBtnAdauga.Text = "Adaugă Persoană";
+            this.gunaaBtnAdauga.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaaBtnAdauga.Click += new System.EventHandler(this.gunaaBtnAdauga_Click);
+            // 
+            // guna2ShadowPanel1
+            // 
+            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.listViewRecenzor);
+            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.Blue;
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(43, 192);
+            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
+            this.guna2ShadowPanel1.Padding = new System.Windows.Forms.Padding(10);
+            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(841, 259);
+            this.guna2ShadowPanel1.TabIndex = 13;
+            // 
+            // listViewRecenzor
+            // 
+            this.listViewRecenzor.AllowColumnReorder = true;
+            this.listViewRecenzor.BackColor = System.Drawing.Color.SkyBlue;
+            this.listViewRecenzor.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colNume,
+            this.colCod,
+            this.colData,
+            this.colSex,
+            this.colRegiune,
+            this.colJudet,
+            this.colLocalitate,
+            this.colDirector});
+            this.listViewRecenzor.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewRecenzor.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.listViewRecenzor.FullRowSelect = true;
+            this.listViewRecenzor.GridLines = true;
+            this.listViewRecenzor.HideSelection = false;
+            this.listViewRecenzor.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem2});
+            this.listViewRecenzor.Location = new System.Drawing.Point(13, 13);
+            this.listViewRecenzor.Name = "listViewRecenzor";
+            this.listViewRecenzor.Size = new System.Drawing.Size(815, 233);
+            this.listViewRecenzor.TabIndex = 16;
+            this.listViewRecenzor.UseCompatibleStateImageBehavior = false;
+            this.listViewRecenzor.View = System.Windows.Forms.View.Details;
+            // 
+            // colNume
+            // 
+            this.colNume.Text = "Nume Prenume";
+            this.colNume.Width = 125;
+            // 
+            // colCod
+            // 
+            this.colCod.Text = "Cod Recenzor";
+            this.colCod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colCod.Width = 100;
+            // 
+            // colSex
+            // 
+            this.colSex.Text = "Sex";
+            this.colSex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colSex.Width = 72;
+            // 
+            // colRegiune
+            // 
+            this.colRegiune.Text = "Regiune";
+            this.colRegiune.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colRegiune.Width = 103;
+            // 
+            // colJudet
+            // 
+            this.colJudet.Text = "Judet";
+            this.colJudet.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colJudet.Width = 88;
+            // 
+            // colLocalitate
+            // 
+            this.colLocalitate.Text = "Localitate";
+            this.colLocalitate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colLocalitate.Width = 79;
+            // 
+            // colDirector
+            // 
+            this.colDirector.Text = "Director Regional";
+            this.colDirector.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colDirector.Width = 141;
+            // 
+            // guna2ContextMenuStrip1
+            // 
+            this.guna2ContextMenuStrip1.BackColor = System.Drawing.Color.Blue;
+            this.guna2ContextMenuStrip1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stergeRecenzorToolStripMenuItem});
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(190, 28);
+            // 
+            // stergeRecenzorToolStripMenuItem
+            // 
+            this.stergeRecenzorToolStripMenuItem.Name = "stergeRecenzorToolStripMenuItem";
+            this.stergeRecenzorToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
+            this.stergeRecenzorToolStripMenuItem.Text = "Sterge Recenzor";
+            // 
+            // gunaImgBtnLocuinta
+            // 
+            this.gunaImgBtnLocuinta.BackColor = System.Drawing.Color.Transparent;
+            this.gunaImgBtnLocuinta.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImgBtnLocuinta.CheckedState.Parent = this.gunaImgBtnLocuinta;
+            this.gunaImgBtnLocuinta.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.gunaImgBtnLocuinta.HoverState.Parent = this.gunaImgBtnLocuinta;
+            this.gunaImgBtnLocuinta.Image = global::Proiect_PAW.Properties.Resources.romania__1_;
+            this.gunaImgBtnLocuinta.ImageRotate = 0F;
+            this.gunaImgBtnLocuinta.ImageSize = new System.Drawing.Size(40, 40);
+            this.gunaImgBtnLocuinta.Location = new System.Drawing.Point(849, 0);
+            this.gunaImgBtnLocuinta.Name = "gunaImgBtnLocuinta";
+            this.gunaImgBtnLocuinta.PressedState.ImageSize = new System.Drawing.Size(40, 35);
+            this.gunaImgBtnLocuinta.PressedState.Parent = this.gunaImgBtnLocuinta;
+            this.gunaImgBtnLocuinta.Size = new System.Drawing.Size(81, 44);
+            this.gunaImgBtnLocuinta.TabIndex = 15;
+            this.gunaImgBtnLocuinta.UseTransparentBackground = true;
+            this.gunaImgBtnLocuinta.Click += new System.EventHandler(this.gunaImgBtnLocuinta_Click);
+            // 
+            // gunaImgBtnDashboard
+            // 
+            this.gunaImgBtnDashboard.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImgBtnDashboard.CheckedState.Parent = this.gunaImgBtnDashboard;
+            this.gunaImgBtnDashboard.HoverState.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaImgBtnDashboard.HoverState.Parent = this.gunaImgBtnDashboard;
+            this.gunaImgBtnDashboard.Image = global::Proiect_PAW.Properties.Resources.arrow21;
+            this.gunaImgBtnDashboard.ImageRotate = 0F;
+            this.gunaImgBtnDashboard.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaImgBtnDashboard.Location = new System.Drawing.Point(3, 47);
+            this.gunaImgBtnDashboard.Name = "gunaImgBtnDashboard";
+            this.gunaImgBtnDashboard.PressedState.ImageSize = new System.Drawing.Size(30, 25);
+            this.gunaImgBtnDashboard.PressedState.Parent = this.gunaImgBtnDashboard;
+            this.gunaImgBtnDashboard.Size = new System.Drawing.Size(48, 33);
+            this.gunaImgBtnDashboard.TabIndex = 14;
+            this.gunaImgBtnDashboard.Click += new System.EventHandler(this.gunaImgBtnDashboard_Click);
+            // 
+            // gunaTbCauta
+            // 
+            this.gunaTbCauta.Animated = true;
+            this.gunaTbCauta.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.gunaTbCauta.AutoRoundedCorners = true;
+            this.gunaTbCauta.BorderColor = System.Drawing.Color.Blue;
+            this.gunaTbCauta.BorderRadius = 17;
+            this.gunaTbCauta.BorderThickness = 2;
+            this.gunaTbCauta.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTbCauta.DefaultText = "";
+            this.gunaTbCauta.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.gunaTbCauta.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.gunaTbCauta.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaTbCauta.DisabledState.Parent = this.gunaTbCauta;
+            this.gunaTbCauta.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.gunaTbCauta.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTbCauta.FocusedState.Parent = this.gunaTbCauta;
+            this.gunaTbCauta.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.gunaTbCauta.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.gunaTbCauta.HoverState.Parent = this.gunaTbCauta;
+            this.gunaTbCauta.IconLeft = global::Proiect_PAW.Properties.Resources.loupe;
+            this.gunaTbCauta.IconLeftSize = new System.Drawing.Size(15, 15);
+            this.gunaTbCauta.Location = new System.Drawing.Point(289, 126);
+            this.gunaTbCauta.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.gunaTbCauta.Name = "gunaTbCauta";
+            this.gunaTbCauta.PasswordChar = '\0';
+            this.gunaTbCauta.PlaceholderText = "Caută";
+            this.gunaTbCauta.SelectedText = "";
+            this.gunaTbCauta.ShadowDecoration.Parent = this.gunaTbCauta;
+            this.gunaTbCauta.Size = new System.Drawing.Size(310, 36);
+            this.gunaTbCauta.TabIndex = 9;
+            this.gunaTbCauta.TextChanged += new System.EventHandler(this.gunaTbCauta_TextChanged);
+            // 
+            // colData
+            // 
+            this.colData.Text = "Data Nasterii";
+            this.colData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colData.Width = 103;
             // 
             // UC_PanouRecenzori
             // 
@@ -516,12 +475,10 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "UC_PanouRecenzori";
             this.Size = new System.Drawing.Size(933, 657);
-            this.Load += new System.EventHandler(this.UC_PanouRecenzori_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2ShadowPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunagdvRecenzori)).EndInit();
             this.guna2ContextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -552,14 +509,15 @@
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem stergeRecenzorToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2ImageButton gunaImgBtnLocuinta;
-        private Guna.UI2.WinForms.Guna2DataGridView gunagdvRecenzori;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColNume;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColCod;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColDataNasterii;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColSex;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColRegiune;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColJudet;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColLocalitate;
         private System.Windows.Forms.ToolStripMenuItem afisarePersoaneToolStripMenuItem;
+        private System.Windows.Forms.ListView listViewRecenzor;
+        private System.Windows.Forms.ColumnHeader colNume;
+        private System.Windows.Forms.ColumnHeader colCod;
+        private System.Windows.Forms.ColumnHeader colSex;
+        private System.Windows.Forms.ColumnHeader colRegiune;
+        private System.Windows.Forms.ColumnHeader colJudet;
+        private System.Windows.Forms.ColumnHeader colLocalitate;
+        private System.Windows.Forms.ColumnHeader colDirector;
+        private System.Windows.Forms.ColumnHeader colData;
     }
 }

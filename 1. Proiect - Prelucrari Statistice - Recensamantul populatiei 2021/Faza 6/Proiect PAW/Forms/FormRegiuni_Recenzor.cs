@@ -48,6 +48,13 @@ namespace Proiect_PAW.Forms
                     {
                         writer.WriteStartElement(nepot.Text);
 
+                        foreach (TreeNode stranepot in nepot.Nodes)
+                        {
+                            writer.WriteStartElement(stranepot.Text);
+
+                            writer.WriteEndElement();
+                        }
+
                         writer.WriteEndElement();
                     }
                     writer.WriteEndElement();
@@ -65,5 +72,7 @@ namespace Proiect_PAW.Forms
             sw.Close();
             MessageBox.Show("Salvat cu succes in locatia bin/Debug!");
         }
+
+     
     }
 }

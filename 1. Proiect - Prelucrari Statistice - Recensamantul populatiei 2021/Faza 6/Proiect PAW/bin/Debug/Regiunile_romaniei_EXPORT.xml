@@ -1,18 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Regiunile Romaniei>
   <Dobrogea>
-    <Popescu Ion />
+    <Popescu Ion>
+      <Tulcea />
+      <Constanta />
+    </Popescu Ion>
   </Dobrogea>
   <Muntenia>
-    <Dobrescu Marin />
+    <Dobrescu Marin>
+      <Municipiul Bucuresti />
+      <Ilfov />
+      <Braila />
+      <Buzau />
+      <Prahova />
+      <Dambovita />
+      <Arges />
+      <Olt />
+      <Teleorman />
+      <Giurgiu />
+      <Calarasi />
+      <Ialomita />
+    </Dobrescu Marin>
   </Muntenia>
   <Bucovina>
-    <Ioana Maria />
+    <Ioana Maria>
+      <Suceava />
+    </Ioana Maria>
   </Bucovina>
   <Moldova>
-    <Ionescu Radu />
+    <Ionescu Radu>
+      <Botosani />
+      <Neamt />
+      <Iasi />
+      <Bacau />
+      <Vaslui />
+      <Vrancea />
+      <Galati />
+    </Ionescu Radu>
   </Moldova>
   <Transilvania>
+    <Nenitescu Razvan />
     <Brasov />
     <Covasna />
     <Harghita />
@@ -25,21 +52,29 @@
     <Salaj />
   </Transilvania>
   <Maramures>
-    <Maramures />
-    <Satu-Mare />
+    <Ionescu Vlad>
+      <Maramures />
+      <Satu-Mare />
+    </Ionescu Vlad>
   </Maramures>
   <Crisana>
-    <Bihor />
-    <Arad />
+    <Georgescu Simona>
+      <Bihor />
+      <Arad />
+    </Georgescu Simona>
   </Crisana>
   <Banat>
-    <Timis />
-    <Caras-Severin />
+    <Nastase Rodica>
+      <Timis />
+      <Caras-Severin />
+    </Nastase Rodica>
   </Banat>
   <Oltenia>
-    <Mehedinti />
-    <Dolj />
-    <Gorj />
-    <Valcea />
+    <Minulescu Constantin>
+      <Mehedinti />
+      <Dolj />
+      <Gorj />
+      <Valcea />
+    </Minulescu Constantin>
   </Oltenia>
 </Regiunile Romaniei>
