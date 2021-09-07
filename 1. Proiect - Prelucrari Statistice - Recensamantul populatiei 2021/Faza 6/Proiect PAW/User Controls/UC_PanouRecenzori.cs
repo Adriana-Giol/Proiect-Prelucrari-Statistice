@@ -31,6 +31,7 @@ namespace Proiect_PAW
             InitializeComponent();
         }
 
+
         private void previzualizareToolStripMenuItem_Click(object sender, EventArgs e)
         {/*
             FormPrevizualizareRecenzori previzualizare = new FormPrevizualizareRecenzori();
@@ -97,5 +98,12 @@ namespace Proiect_PAW
                 item.SubItems.Add(recenzor.DirectorRegional);
             }
         }
+
+        private void gunaBtnSterge_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        
     }
 }

@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Giol Adriana",
-            "5441",
-            "05/05/1998",
-            "Feminin",
-            "Muntenia",
-            "Braila",
-            "Braila",
-            "Popescu Ana"}, -1);
             this.labelTitlu = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.afisarePersoaneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,6 +50,7 @@
             this.listViewRecenzor = new System.Windows.Forms.ListView();
             this.colNume = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colCod = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colData = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colSex = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colRegiune = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colJudet = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -69,7 +61,6 @@
             this.gunaImgBtnLocuinta = new Guna.UI2.WinForms.Guna2ImageButton();
             this.gunaImgBtnDashboard = new Guna.UI2.WinForms.Guna2ImageButton();
             this.gunaTbCauta = new Guna.UI2.WinForms.Guna2TextBox();
-            this.colData = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
@@ -230,6 +221,7 @@
             this.gunaBtnSterge.TabIndex = 2;
             this.gunaBtnSterge.Text = "Șterge Persoană";
             this.gunaBtnSterge.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaBtnSterge.Click += new System.EventHandler(this.gunaBtnSterge_Click);
             // 
             // gunaBtnActualizare
             // 
@@ -312,8 +304,6 @@
             this.listViewRecenzor.FullRowSelect = true;
             this.listViewRecenzor.GridLines = true;
             this.listViewRecenzor.HideSelection = false;
-            this.listViewRecenzor.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
             this.listViewRecenzor.Location = new System.Drawing.Point(13, 13);
             this.listViewRecenzor.Name = "listViewRecenzor";
             this.listViewRecenzor.Size = new System.Drawing.Size(815, 233);
@@ -331,6 +321,12 @@
             this.colCod.Text = "Cod Recenzor";
             this.colCod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.colCod.Width = 100;
+            // 
+            // colData
+            // 
+            this.colData.Text = "Data Nasterii";
+            this.colData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.colData.Width = 103;
             // 
             // colSex
             // 
@@ -455,12 +451,6 @@
             this.gunaTbCauta.Size = new System.Drawing.Size(310, 36);
             this.gunaTbCauta.TabIndex = 9;
             this.gunaTbCauta.TextChanged += new System.EventHandler(this.gunaTbCauta_TextChanged);
-            // 
-            // colData
-            // 
-            this.colData.Text = "Data Nasterii";
-            this.colData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colData.Width = 103;
             // 
             // UC_PanouRecenzori
             // 
